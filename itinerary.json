@@ -10,9 +10,9 @@
       "stops": [
         { "time": "14:13", "place": "LAX Airport", "note": "✈️ UA2460 IAH→LAX 도착", "duration": "30분" },
         { "time": "16:30", "place": "FOX Rent A Car (LAX)", "note": "🚗 픽업 (예약 #FFX073852B). 셔틀 보라색 표지판", "duration": "45분" },
-        { "time": "17:30", "place": "San Pedro Fish Market", "note": "🦐 LA 최대 fish market — 새우 트레이 $30-50 4인분, 항구 야외 테이블 (저녁)", "duration": "1.5시간" },
-        { "time": "19:15", "place": "Costco Inglewood", "note": "🛒 4박 식료품 장보기 (San Pedro→Costco 25분)", "duration": "1시간" },
-        { "time": "20:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리 (호스트 12시 메시지)", "duration": "" }
+        { "time": "17:30", "place": "Costco Inglewood", "note": "🛒 4박 식료품 장보기 (LAX 5분)", "duration": "1시간" },
+        { "time": "18:45", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리", "duration": "1시간" },
+        { "time": "20:00", "place": "Boiling Crab Koreatown", "note": "🦐 저녁 — K-Town 도보권 Cajun 해산물 보일 (새우 봉지 $25-40/인)", "duration": "1.5시간" }
       ]
     },
     {
@@ -128,7 +128,7 @@
         { "time": "14:00", "place": "Disneyland Park", "note": "🎢 오후 어트랙션 + 퍼레이드 (Genie+ 권장 $30/인)", "duration": "5시간" },
         { "time": "19:00", "place": "Days Inn Anaheim At Disneyland", "note": "🧳 호텔 짐 픽업 + 출발", "duration": "30분" },
         { "time": "19:30", "place": "Motel 6 San Diego Downtown", "note": "🚗 Anaheim→SD (~1.5h, I-5 S)", "duration": "1.5시간" },
-        { "time": "21:00", "place": "Motel 6 San Diego Downtown", "note": "🏨 체크인 + 가벼운 야식 (Tacos El Gordo 24시간)", "duration": "" }
+        { "time": "21:00", "place": "Tacos El Gordo", "note": "🌮 야식 (24시간 영업, Motel 6에서 차로 5분, 후 체크인)", "duration": "" }
       ]
     },
     {

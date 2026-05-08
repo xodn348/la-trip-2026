@@ -255,5 +255,11 @@
     "lat": 33.8407002,
     "lon": -118.390697,
     "display": "Quality Seafood Inc., 130, International Boardwalk, Redondo Beach, Los Angeles County, California, 90277, United States"
-  }
+  },
+  "The Boiling Crab Koreatown, 3377 Wilshire Blvd, Los Angeles, CA 90010": {
+    "lat": 34.0623265,
+    "lon": -118.2977594,
+    "display": "The Boiling Crab, 3377, Wilshire Boulevard, Koreatown, Los Angeles, Los Angeles County, California, 90010, United States"
+  },
+  "Ondal 2, 4566 W 8th St, Los Angeles, CA 90005": null
 }
