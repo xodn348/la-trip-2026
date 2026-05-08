@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>LA & Las Vegas 2026</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #161a21;
+    --panel2: #1e242d;
+    --text: #e8eaee;
+    --muted: #8b94a3;
+    --accent: #ffd166;
+    --booked: #06d6a0;
+    --line: #2a313c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", sans-serif; background: var(--bg); color: var(--text); }
+  #app { display: grid; grid-template-columns: 360px 1fr; height: 100vh; }
+  #sidebar { background: var(--panel); overflow-y: auto; border-right: 1px solid var(--line); }
+  #header { padding: 16px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--panel); z-index: 5; }
+  #header h1 { margin: 0; font-size: 18px; letter-spacing: -0.01em; }
+  #header .sub { margin-top: 4px; color: var(--muted); font-size: 12px; }
+  #counts { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  .filters { padding: 12px 16px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+  .filter-group { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: var(--panel2); border: 1px solid var(--line); color: var(--text); padding: 5px 10px; border-radius: 999px; font-size: 12px; cursor: pointer; user-select: none; }
+  .chip.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+  .chip:hover { border-color: #4a5263; }
+  #search { width: 100%; padding: 8px 10px; background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; color: var(--text); font-size: 13px; }
+  .filter-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .place-list { list-style: none; padding: 0; margin: 0; }
+  .place-item { padding: 10px 16px; border-bottom: 1px solid var(--line); cursor: pointer; transition: background 0.1s; }
+  .place-item:hover { background: var(--panel2); }
+  .place-item.active { background: #2a3140; }
+  .place-name { font-size: 14px; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+  .place-meta { color: var(--muted); font-size: 11px; margin-top: 3px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .place-notes { color: #b8c0cc; font-size: 12px; margin-top: 4px; line-height: 1.35; }
+  .badge { font-size: 10px; padding: 1px 6px; border-radius: 3px; background: var(--panel2); border: 1px solid var(--line); }
+  .badge.booked { background: var(--booked); color: #000; border-color: var(--booked); font-weight: 600; }
+  .badge.wife { background: #ef476f; color: white; border-color: #ef476f; }
+  .badge.self { background: #118ab2; color: white; border-color: #118ab2; }
+  .stars { color: var(--accent); font-size: 11px; }
+  #map { height: 100vh; }
+  .leaflet-popup-content { font-size: 13px; line-height: 1.45; }
+  .leaflet-popup-content strong { font-size: 14px; display: block; margin-bottom: 4px; }
+  .leaflet-popup-content .pop-meta { color: #666; font-size: 11px; margin-top: 6px; }
+  .leaflet-popup-content a { color: #118ab2; text-decoration: none; }
+  .marker-pin {
+    width: 26px; height: 26px; border-radius: 50% 50% 50% 0;
+    background: var(--accent); transform: rotate(-45deg);
+    border: 2px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .marker-pin span { transform: rotate(45deg); font-size: 13px; }
+  @media (max-width: 768px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: 50vh 50vh; }
+    #sidebar { border-right: none; border-bottom: 1px solid var(--line); }
+    #map { height: 50vh; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div id="header">
+      <h1>🌴 LA & Las Vegas 2026</h1>
+      <div class="sub">2026.05.08 – 05.17 · 와이프 + 남편 공동 위시리스트</div>
+      <div id="counts"></div>
+    </div>
+    <div class="filters">
+      <input id="search" placeholder="🔍 장소 검색…" autocomplete="off">
+      <div>
+        <div class="filter-label">도시</div>
+        <div class="filter-group" id="city-filter"></div>
+      </div>
+      <div>
+        <div class="filter-label">카테고리</div>
+        <div class="filter-group" id="cat-filter"></div>
+      </div>
+      <div>
+        <div class="filter-label">출처</div>
+        <div class="filter-group" id="src-filter"></div>
+      </div>
+    </div>
+    <ul class="place-list" id="place-list"></ul>
+  </aside>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+const CATEGORY_ICONS = {
+  hotel: { emoji: "🏨", color: "#06d6a0" },
+  restaurant: { emoji: "🍽️", color: "#ef476f" },
+  cafe: { emoji: "☕", color: "#a07a5d" },
+  attraction: { emoji: "📍", color: "#ffd166" },
+  beach: { emoji: "🏖️", color: "#73c2fb" },
+  museum: { emoji: "🏛️", color: "#9d4edd" },
+  park: { emoji: "🌳", color: "#52b788" },
+  shopping: { emoji: "🛍️", color: "#f8961e" },
+  theme_park: { emoji: "🎢", color: "#ff70a6" },
+  viewpoint: { emoji: "🌅", color: "#f4a261" },
+  theater: { emoji: "🎭", color: "#bc6c25" },
+  zoo: { emoji: "🦁", color: "#e76f51" },
+};
+
+const SOURCE_LABELS = { booked: "예약됨", wife: "와이프", self: "남편" };
+
+let allPlaces = [];
+let activeFilters = { city: "all", cat: "all", src: "all", q: "" };
+let map, cluster, markers = {};
+
+async function init() {
+  const r = await fetch(`places.json?ts=${Date.now()}`);
+  const trip = await r.json();
+  allPlaces = trip.places;
+  document.querySelector("#header h1").textContent = "🌴 " + trip.title;
+  document.querySelector("#header .sub").textContent = `${trip.dates} · 와이프(${trip.wife}) + 남편 위시리스트`;
+  setupMap();
+  setupFilters();
+  render();
+}
+
+function setupMap() {
+  map = L.map("map", { zoomControl: true }).setView([34.0522, -117.5], 7);
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+    attribution: '© <a href="https://openstreetmap.org/copyright">OSM</a> · CARTO',
+    subdomains: "abcd", maxZoom: 19
+  }).addTo(map);
+  cluster = L.markerClusterGroup({ disableClusteringAtZoom: 12, spiderfyOnMaxZoom: true });
+  map.addLayer(cluster);
+}
+
+function makeIcon(category, isBooked) {
+  const c = CATEGORY_ICONS[category] || CATEGORY_ICONS.attraction;
+  const color = isBooked ? "#06d6a0" : c.color;
+  return L.divIcon({
+    className: "",
+    html: `<div class="marker-pin" style="background:${color}"><span>${c.emoji}</span></div>`,
+    iconSize: [26, 26],
+    iconAnchor: [13, 26],
+    popupAnchor: [0, -22],
+  });
+}
+
+function setupFilters() {
+  const cities = [...new Set(allPlaces.map(p => p.city))].sort();
+  const cats = [...new Set(allPlaces.map(p => p.category))].sort();
+  const srcs = [...new Set(allPlaces.map(p => p.source))].sort();
+
+  buildChips("city-filter", ["all", ...cities], "city");
+  buildChips("cat-filter", ["all", ...cats], "cat");
+  buildChips("src-filter", ["all", ...srcs], "src");
+
+  document.getElementById("search").addEventListener("input", e => {
+    activeFilters.q = e.target.value.toLowerCase();
+    render();
+  });
+}
+
+function buildChips(elId, values, key) {
+  const el = document.getElementById(elId);
+  el.innerHTML = "";
+  values.forEach(v => {
+    const c = document.createElement("span");
+    c.className = "chip" + (activeFilters[key] === v ? " active" : "");
+    c.textContent = v === "all" ? "전체" : (SOURCE_LABELS[v] || v);
+    c.onclick = () => {
+      activeFilters[key] = v;
+      [...el.children].forEach(x => x.classList.remove("active"));
+      c.classList.add("active");
+      render();
+    };
+    el.appendChild(c);
+  });
+}
+
+function filterPlaces() {
+  return allPlaces.filter(p => {
+    if (activeFilters.city !== "all" && p.city !== activeFilters.city) return false;
+    if (activeFilters.cat !== "all" && p.category !== activeFilters.cat) return false;
+    if (activeFilters.src !== "all" && p.source !== activeFilters.src) return false;
+    if (activeFilters.q) {
+      const hay = (p.name + " " + (p.notes||"") + " " + p.city + " " + p.category).toLowerCase();
+      if (!hay.includes(activeFilters.q)) return false;
+    }
+    return true;
+  });
+}
+
+function render() {
+  const places = filterPlaces();
+  cluster.clearLayers();
+  markers = {};
+
+  places.forEach((p, i) => {
+    if (p.lat == null || p.lon == null) return;
+    const isBooked = p.source === "booked";
+    const m = L.marker([p.lat, p.lon], { icon: makeIcon(p.category, isBooked) });
+    const stars = p.rating ? "⭐".repeat(Math.round(p.rating)) + ` ${p.rating}` : "";
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.query || p.name + " " + p.city)}`;
+    m.bindPopup(`
+      <strong>${p.name}</strong>
+      <div>${CATEGORY_ICONS[p.category]?.emoji||"📍"} ${p.category} · ${p.city}</div>
+      ${stars ? `<div class="stars">${stars}</div>` : ""}
+      ${p.notes ? `<div style="margin-top:6px">${p.notes}</div>` : ""}
+      <div class="pop-meta"><a href="${mapsUrl}" target="_blank">구글맵에서 열기 ↗</a></div>
+    `);
+    m._placeId = i;
+    cluster.addLayer(m);
+    markers[i] = m;
+  });
+
+  if (places.length > 0) {
+    const bounds = L.latLngBounds(places.filter(p => p.lat).map(p => [p.lat, p.lon]));
+    map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13 });
+  }
+
+  renderList(places);
+  document.getElementById("counts").textContent = `${places.length} / ${allPlaces.length} places`;
+}
+
+function renderList(places) {
+  const ul = document.getElementById("place-list");
+  ul.innerHTML = "";
+  places.forEach((p, idx) => {
+    const li = document.createElement("li");
+    li.className = "place-item";
+    const stars = p.rating ? `<span class="stars">⭐ ${p.rating}</span>` : "";
+    const cat = CATEGORY_ICONS[p.category] || CATEGORY_ICONS.attraction;
+    li.innerHTML = `
+      <div class="place-name">${cat.emoji} ${p.name} <span class="badge ${p.source}">${SOURCE_LABELS[p.source]||p.source}</span></div>
+      <div class="place-meta">
+        <span>${p.city}</span>
+        <span>·</span>
+        <span>${p.category}</span>
+        ${stars}
+      </div>
+      ${p.notes ? `<div class="place-notes">${p.notes}</div>` : ""}
+    `;
+    li.onclick = () => {
+      if (p.lat == null) return;
+      map.setView([p.lat, p.lon], 15);
+      const m = Object.values(markers).find(mk => mk.getLatLng().lat === p.lat && mk.getLatLng().lng === p.lon);
+      if (m) {
+        cluster.zoomToShowLayer(m, () => m.openPopup());
+      }
+      [...ul.children].forEach(x => x.classList.remove("active"));
+      li.classList.add("active");
+    };
+    ul.appendChild(li);
+  });
+}
+
+init();
+</script>
+</body>
+</html>
