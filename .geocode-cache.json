@@ -231,5 +231,18 @@
     "lon": -118.3737481,
     "display": "LAX Rental Car Center, 5251, West 98th Street, Los Angeles, Los Angeles County, California, 90045, United States"
   },
-  "BMO Stadium, 3939 S Figueroa St, Los Angeles": null
+  "BMO Stadium, 3939 S Figueroa St, Los Angeles": null,
+  "Costco Wholesale, 11969 Aviation Blvd, Inglewood, CA 90304": null,
+  "Connie and Ted's, 8171 Santa Monica Blvd, West Hollywood, CA 90046": {
+    "lat": 34.0911191,
+    "lon": -118.3672148,
+    "display": "Connie and Ted's, 8171, Santa Monica Boulevard, West Hollywood, Los Angeles County, California, 90046, United States"
+  },
+  "Muscle Beach Venice, 1800 Ocean Front Walk, Venice, CA 90291": null,
+  "Venice Beach Boardwalk, Venice, CA": {
+    "lat": 33.9867133,
+    "lon": -118.4741048,
+    "display": "Venice Beach Boardwalk, Venice, Los Angeles, Los Angeles County, California, United States"
+  },
+  "The Albright, 258 Santa Monica Pier, Santa Monica, CA 90401": null
 }

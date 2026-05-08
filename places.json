@@ -66,8 +66,8 @@
       "rating": 3.9,
       "notes": "⚠️ 와이프 메모: 5/14-5/17 숙소 (실제 예약과 불일치)",
       "query": "Libra Hotel Los Angeles",
-      "lat": null,
-      "lon": null
+      "lat": 34.0469,
+      "lon": -118.2569
     },
     {
       "name": "Meat On Ocean",
@@ -88,8 +88,8 @@
       "rating": 3.6,
       "notes": "insta",
       "query": "RH Ocean Grill at RH Newport Beach",
-      "lat": null,
-      "lon": null
+      "lat": 33.6181,
+      "lon": -117.877
     },
     {
       "name": "Torrey Pines Gliderport",
@@ -110,8 +110,8 @@
       "rating": 4.7,
       "notes": "주얼리",
       "query": "Buccellati Beverly Hills",
-      "lat": null,
-      "lon": null
+      "lat": 34.0671,
+      "lon": -118.4001
     },
     {
       "name": "SET ACTIVE",
@@ -121,8 +121,8 @@
       "rating": 5.0,
       "notes": "쇼핑해야돼",
       "query": "SET ACTIVE Los Angeles",
-      "lat": null,
-      "lon": null
+      "lat": 34.0834,
+      "lon": -118.364
     },
     {
       "name": "Kuya Lord",
@@ -143,8 +143,8 @@
       "rating": 4.9,
       "notes": "⭐ 미슐랭 2스타 카이세키",
       "query": "3455 S Overland Ave, Los Angeles, CA 90034",
-      "lat": null,
-      "lon": null
+      "lat": 34.0269,
+      "lon": -118.4099
     },
     {
       "name": "Pink's Hot Dogs",
@@ -198,8 +198,8 @@
       "rating": null,
       "notes": "Torrey Pines 산책로",
       "query": "Torrey Pines Gliderport Trail, La Jolla",
-      "lat": null,
-      "lon": null
+      "lat": 32.8909,
+      "lon": -117.2516
     },
     {
       "name": "Salk Institute",
@@ -396,8 +396,8 @@
       "rating": 4.7,
       "notes": "발보아파크 식물원",
       "query": "Botanical Building, Balboa Park",
-      "lat": null,
-      "lon": null
+      "lat": 32.7321,
+      "lon": -117.1497
     },
     {
       "name": "Lily Pond",
@@ -407,8 +407,8 @@
       "rating": 4.8,
       "notes": "발보아파크 연못",
       "query": "Lily Pond, Balboa Park, San Diego",
-      "lat": null,
-      "lon": null
+      "lat": 32.7321,
+      "lon": -117.15
     },
     {
       "name": "Spanish Village Art Center",
@@ -418,8 +418,8 @@
       "rating": 4.7,
       "notes": "발보아파크 아트센터",
       "query": "Spanish Village Art Center, Balboa Park",
-      "lat": null,
-      "lon": null
+      "lat": 32.7373,
+      "lon": -117.1466
     },
     {
       "name": "Little Italy",
@@ -440,8 +440,8 @@
       "rating": 4.6,
       "notes": "멕시칸 시푸드",
       "query": "Oscars Mexican Seafood, San Diego",
-      "lat": null,
-      "lon": null
+      "lat": 32.8084,
+      "lon": -117.2552
     },
     {
       "name": "Coronado Island",
@@ -473,8 +473,8 @@
       "rating": 4.3,
       "notes": "베이커리",
       "query": "Bag of Cakes Los Angeles",
-      "lat": null,
-      "lon": null
+      "lat": 34.056,
+      "lon": -118.4419
     },
     {
       "name": "Old LA Zoo",
@@ -550,8 +550,8 @@
       "rating": 4.4,
       "notes": "르뱅쿠키 원조",
       "query": "Levain Bakery Los Angeles",
-      "lat": null,
-      "lon": null
+      "lat": 34.0734,
+      "lon": -118.3736
     },
     {
       "name": "Santa Monica",
@@ -629,6 +629,61 @@
       "query": "BMO Stadium, 3939 S Figueroa St, Los Angeles",
       "lat": 34.0124,
       "lon": -118.2849
+    },
+    {
+      "name": "Costco Inglewood",
+      "city": "Inglewood",
+      "category": "shopping",
+      "source": "booked",
+      "rating": 4.4,
+      "notes": "🛒 4박 식료품 장보기 (LAX-K-Town 사이, 픽업 후 들르기 좋음)",
+      "query": "Costco Wholesale, 11969 Aviation Blvd, Inglewood, CA 90304",
+      "lat": 33.9446,
+      "lon": -118.3768
+    },
+    {
+      "name": "Connie & Ted's",
+      "city": "LA",
+      "category": "restaurant",
+      "source": "wishlist",
+      "rating": 4.3,
+      "notes": "🦞 해산물 (Cape Cod 스타일 oysters, lobster rolls, fish & chips)",
+      "query": "Connie and Ted's, 8171 Santa Monica Blvd, West Hollywood, CA 90046",
+      "lat": 34.0911191,
+      "lon": -118.3672148
+    },
+    {
+      "name": "Muscle Beach Venice",
+      "city": "Venice",
+      "category": "attraction",
+      "source": "wishlist",
+      "rating": 4.6,
+      "notes": "💪 베니스 야외 헬스장 (보디빌더 명소)",
+      "query": "Muscle Beach Venice, 1800 Ocean Front Walk, Venice, CA 90291",
+      "lat": 33.9866,
+      "lon": -118.4724
+    },
+    {
+      "name": "Venice Beach Boardwalk",
+      "city": "Venice",
+      "category": "beach",
+      "source": "wishlist",
+      "rating": 4.5,
+      "notes": "🏖️ 베니스 보드워크 (스트리트 퍼포머 + 벽화)",
+      "query": "Venice Beach Boardwalk, Venice, CA",
+      "lat": 33.9867133,
+      "lon": -118.4741048
+    },
+    {
+      "name": "The Albright",
+      "city": "Santa Monica",
+      "category": "restaurant",
+      "source": "wishlist",
+      "rating": 4.4,
+      "notes": "🦞 산타모니카 피어 위 랍스터롤 명소",
+      "query": "The Albright, 258 Santa Monica Pier, Santa Monica, CA 90401",
+      "lat": 34.0086,
+      "lon": -118.4974
     }
   ]
 }
