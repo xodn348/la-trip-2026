@@ -26,12 +26,16 @@
   body { overflow: hidden; }
   #app { display: grid; grid-template-columns: 380px 1fr; height: 100vh; height: 100dvh; }
   #sidebar { background: var(--panel); overflow-y: auto; border-right: 1px solid var(--line); }
-  #header { padding: 14px 16px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--panel); z-index: 5; }
+  #header { padding: 14px 16px 0; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--panel); z-index: 5; }
   #header h1 { margin: 0; font-size: 17px; letter-spacing: -0.01em; line-height: 1.3; }
   #header .sub { margin-top: 4px; color: var(--muted); font-size: 11px; }
-  #counts { color: var(--muted); font-size: 11px; margin-top: 6px; }
+  #counts { color: var(--muted); font-size: 11px; margin-top: 4px; }
 
-  .filters { padding: 10px 16px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px; background: var(--panel); position: sticky; top: 75px; z-index: 4; }
+  .view-tabs { display: flex; margin-top: 12px; border-bottom: 1px solid var(--line); margin-left: -16px; margin-right: -16px; padding: 0 16px; gap: 4px; }
+  .view-tab { padding: 9px 14px; cursor: pointer; font-size: 13px; color: var(--muted); border-bottom: 2px solid transparent; user-select: none; }
+  .view-tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+  .filters { padding: 10px 16px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px; background: var(--panel); position: sticky; top: 116px; z-index: 4; }
   #search { width: 100%; padding: 8px 10px; background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; color: var(--text); font-size: 13px; outline: none; }
   #search:focus { border-color: var(--accent); }
   .chip-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
@@ -39,8 +43,11 @@
   .chip { background: var(--panel2); border: 1px solid var(--line); color: var(--text); padding: 5px 10px; border-radius: 999px; font-size: 12px; cursor: pointer; user-select: none; white-space: nowrap; flex-shrink: 0; }
   .chip.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
   .chip:hover { border-color: #4a5263; }
+  .chip-day { display: flex; flex-direction: column; align-items: center; padding: 6px 11px; min-width: 48px; }
+  .chip-day .d { font-size: 10px; opacity: 0.7; }
+  .chip-day .n { font-size: 14px; font-weight: 600; line-height: 1.1; }
 
-  .place-list { padding: 0 0 60px 0; margin: 0; }
+  .place-list { padding: 0 0 80px 0; margin: 0; }
   details.cat-section { border-bottom: 1px solid var(--line); }
   details.cat-section[open] { background: linear-gradient(180deg, #181d25 0%, transparent 30px); }
   details.cat-section summary { padding: 12px 16px; cursor: pointer; user-select: none; list-style: none; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; }
@@ -51,7 +58,6 @@
   .cat-count { color: var(--muted); font-size: 12px; font-weight: 400; margin-left: 4px; }
 
   .place-item { padding: 9px 16px 9px 44px; border-top: 1px solid var(--line); cursor: pointer; transition: background 0.1s; list-style: none; }
-  .place-item:first-of-type { border-top: 1px solid var(--line); }
   .place-item:hover { background: var(--panel2); }
   .place-item.active { background: #2a3140; }
   .place-name { font-size: 13.5px; font-weight: 500; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
@@ -61,6 +67,26 @@
   .badge.booked { background: var(--booked); color: #000; border-color: var(--booked); font-weight: 600; }
   .badge.wishlist { background: #ef476f; color: white; border-color: #ef476f; }
   .stars { color: var(--accent); font-size: 11px; }
+
+  /* Schedule view */
+  .day-header { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+  .day-header .date { font-size: 12px; color: var(--muted); }
+  .day-header .label { font-size: 16px; font-weight: 600; margin-top: 2px; }
+  .day-header .totals { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  .schedule-list { padding: 8px 0 80px; margin: 0; list-style: none; position: relative; }
+  .schedule-list::before { content: ""; position: absolute; left: 64px; top: 16px; bottom: 80px; width: 2px; background: var(--line); }
+  .stop-item { display: grid; grid-template-columns: 56px 1fr; gap: 12px; padding: 10px 16px; align-items: start; cursor: pointer; position: relative; }
+  .stop-item:hover { background: var(--panel2); }
+  .stop-item.active { background: #2a3140; }
+  .stop-time { font-size: 13px; font-weight: 600; color: var(--accent); padding-top: 1px; }
+  .stop-time .duration { display: block; font-size: 10px; color: var(--muted); font-weight: 400; margin-top: 1px; }
+  .stop-body { position: relative; padding-left: 16px; }
+  .stop-body::before { content: ""; position: absolute; left: -8px; top: 5px; width: 14px; height: 14px; background: var(--accent); border-radius: 50%; border: 2px solid var(--panel); z-index: 1; }
+  .stop-place { font-size: 14px; font-weight: 500; }
+  .stop-note { font-size: 12px; color: #b8c0cc; margin-top: 3px; line-height: 1.4; }
+  .stop-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
   #map { height: 100vh; height: 100dvh; }
   .leaflet-popup-content { font-size: 13px; line-height: 1.45; margin: 10px 12px; }
   .leaflet-popup-content strong { font-size: 14px; display: block; margin-bottom: 4px; }
@@ -75,15 +101,21 @@
   }
   .marker-pin span { transform: rotate(45deg); font-size: 13px; }
   .marker-pin.booked { box-shadow: 0 0 0 3px var(--booked), 0 2px 6px rgba(0,0,0,0.4); }
+  .marker-numbered {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--accent); color: #000; border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px;
+  }
 
-  /* Mobile bottom-sheet */
   #toggle-list { display: none; position: fixed; bottom: calc(20px + var(--safe-bottom)); right: 16px; z-index: 1000; background: var(--accent); color: #000; border: none; padding: 12px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 14px rgba(0,0,0,0.4); cursor: pointer; }
 
   @media (max-width: 768px) {
     #app { grid-template-columns: 1fr; grid-template-rows: 1fr; }
     #sidebar {
       position: fixed; left: 0; right: 0; bottom: 0; top: auto;
-      height: 70vh; height: 70dvh;
+      height: 75vh; height: 75dvh;
       transform: translateY(100%);
       transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
       z-index: 1100;
@@ -94,7 +126,7 @@
     #sidebar.open { transform: translateY(0); }
     #header { border-radius: 16px 16px 0 0; padding-top: 8px; }
     #header::before { content: ""; display: block; width: 36px; height: 4px; background: var(--line); border-radius: 2px; margin: 0 auto 10px; }
-    .filters { top: 60px; }
+    .filters { top: 102px; }
     #toggle-list { display: block; }
     #map { height: 100vh; height: 100dvh; width: 100%; }
   }
@@ -107,13 +139,25 @@
       <h1>🌴 LA & Las Vegas 2026</h1>
       <div class="sub">2026.05.08 – 05.17 · 부부 위시리스트</div>
       <div id="counts"></div>
+      <div class="view-tabs">
+        <span class="view-tab active" data-view="places">📍 모든 장소</span>
+        <span class="view-tab" data-view="schedule">📅 일정</span>
+      </div>
     </div>
-    <div class="filters">
-      <input id="search" placeholder="🔍 장소 검색…" autocomplete="off">
-      <div class="chip-row" id="city-filter"></div>
-      <div class="chip-row" id="src-filter"></div>
+    <div id="places-pane">
+      <div class="filters">
+        <input id="search" placeholder="🔍 장소 검색…" autocomplete="off">
+        <div class="chip-row" id="city-filter"></div>
+        <div class="chip-row" id="src-filter"></div>
+      </div>
+      <ul class="place-list" id="place-list"></ul>
     </div>
-    <ul class="place-list" id="place-list"></ul>
+    <div id="schedule-pane" style="display:none">
+      <div class="filters">
+        <div class="chip-row" id="day-filter"></div>
+      </div>
+      <div id="day-content"></div>
+    </div>
   </aside>
   <div id="map"></div>
 </div>
@@ -142,17 +186,27 @@ const CATEGORY_ORDER = ["hotel", "rental_car", "restaurant", "cafe", "beach", "p
 const SOURCE_LABELS = { booked: "예약됨", wishlist: "위시리스트" };
 
 let allPlaces = [];
+let placeByName = {};
+let itinerary = null;
+let activeView = "places";
 let activeFilters = { city: "all", src: "all", q: "" };
-let map, cluster, markers = {};
+let activeDay = 1;
+let map, cluster, markers = {}, dayLayer = null;
 
 async function init() {
-  const r = await fetch(`places.json?ts=${Date.now()}`);
-  const trip = await r.json();
+  const [trip, itin] = await Promise.all([
+    fetch(`places.json?ts=${Date.now()}`).then(r => r.json()),
+    fetch(`itinerary.json?ts=${Date.now()}`).then(r => r.json()),
+  ]);
   allPlaces = trip.places;
+  itinerary = itin;
+  allPlaces.forEach(p => placeByName[p.name] = p);
   document.querySelector("#header h1").textContent = "🌴 " + trip.title;
   document.querySelector("#header .sub").textContent = `${trip.dates} · 부부 공동 위시리스트`;
   setupMap();
+  setupTabs();
   setupFilters();
+  setupDayFilter();
   setupMobileSheet();
   render();
 }
@@ -167,6 +221,19 @@ function setupMap() {
   map.addLayer(cluster);
 }
 
+function setupTabs() {
+  document.querySelectorAll(".view-tab").forEach(t => {
+    t.addEventListener("click", () => {
+      document.querySelectorAll(".view-tab").forEach(x => x.classList.remove("active"));
+      t.classList.add("active");
+      activeView = t.dataset.view;
+      document.getElementById("places-pane").style.display = activeView === "places" ? "" : "none";
+      document.getElementById("schedule-pane").style.display = activeView === "schedule" ? "" : "none";
+      render();
+    });
+  });
+}
+
 function setupMobileSheet() {
   const sidebar = document.getElementById("sidebar");
   const btn = document.getElementById("toggle-list");
@@ -174,9 +241,8 @@ function setupMobileSheet() {
     sidebar.classList.toggle("open");
     btn.textContent = sidebar.classList.contains("open") ? "🗺️ 지도 보기" : "📋 목록 보기";
   });
-  // Close sheet when picking a place on mobile
-  document.getElementById("place-list").addEventListener("click", (e) => {
-    if (window.innerWidth <= 768 && e.target.closest(".place-item")) {
+  document.getElementById("sidebar").addEventListener("click", (e) => {
+    if (window.innerWidth <= 768 && (e.target.closest(".place-item") || e.target.closest(".stop-item"))) {
       setTimeout(() => {
         sidebar.classList.remove("open");
         btn.textContent = "📋 목록 보기";
@@ -191,9 +257,14 @@ function makeIcon(category, isBooked) {
   return L.divIcon({
     className: "",
     html: `<div class="marker-pin ${isBooked ? "booked" : ""}" style="background:${color}"><span>${c.emoji}</span></div>`,
-    iconSize: [28, 28],
-    iconAnchor: [14, 28],
-    popupAnchor: [0, -24],
+    iconSize: [28, 28], iconAnchor: [14, 28], popupAnchor: [0, -24],
+  });
+}
+function makeNumberedIcon(num, color) {
+  return L.divIcon({
+    className: "",
+    html: `<div class="marker-numbered" style="background:${color}">${num}</div>`,
+    iconSize: [30, 30], iconAnchor: [15, 15], popupAnchor: [0, -15],
   });
 }
 
@@ -204,7 +275,7 @@ function setupFilters() {
   buildChips("src-filter", ["all", ...srcs], "src");
   document.getElementById("search").addEventListener("input", e => {
     activeFilters.q = e.target.value.toLowerCase();
-    render();
+    if (activeView === "places") render();
   });
 }
 
@@ -217,6 +288,24 @@ function buildChips(elId, values, key) {
     c.textContent = v === "all" ? "전체" : (SOURCE_LABELS[v] || v);
     c.onclick = () => {
       activeFilters[key] = v;
+      [...el.children].forEach(x => x.classList.remove("active"));
+      c.classList.add("active");
+      render();
+    };
+    el.appendChild(c);
+  });
+}
+
+function setupDayFilter() {
+  const el = document.getElementById("day-filter");
+  el.innerHTML = "";
+  itinerary.days.forEach(d => {
+    const c = document.createElement("span");
+    c.className = "chip chip-day" + (d.day === activeDay ? " active" : "");
+    const md = d.date.slice(5).replace("-", "/");
+    c.innerHTML = `<span class="d">${d.weekday} ${md}</span><span class="n">D${d.day}</span>`;
+    c.onclick = () => {
+      activeDay = d.day;
       [...el.children].forEach(x => x.classList.remove("active"));
       c.classList.add("active");
       render();
@@ -238,51 +327,70 @@ function filterPlaces() {
 }
 
 function render() {
-  const places = filterPlaces();
   cluster.clearLayers();
+  if (dayLayer) { map.removeLayer(dayLayer); dayLayer = null; }
   markers = {};
 
-  places.forEach((p, i) => {
-    if (p.lat == null || p.lon == null) return;
-    const isBooked = p.source === "booked";
-    const m = L.marker([p.lat, p.lon], { icon: makeIcon(p.category, isBooked) });
-    const stars = p.rating ? `⭐ ${p.rating}` : "";
-    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.query || p.name + " " + p.city)}`;
-    const cat = CATEGORY_ICONS[p.category] || CATEGORY_ICONS.attraction;
-    m.bindPopup(`
-      <strong>${p.name}</strong>
-      <div>${cat.emoji} ${cat.name} · ${p.city}</div>
-      ${stars ? `<div class="stars">${stars}</div>` : ""}
-      ${p.notes ? `<div style="margin-top:6px">${p.notes}</div>` : ""}
-      <div class="pop-meta"><a href="${mapsUrl}" target="_blank" rel="noopener">🗺️ 구글맵에서 길찾기 →</a></div>
-    `, { maxWidth: 280 });
-    cluster.addLayer(m);
-    markers[`${p.lat},${p.lon}`] = m;
-  });
-
-  if (places.length > 0) {
-    const valid = places.filter(p => p.lat);
-    if (valid.length === 1) {
-      map.setView([valid[0].lat, valid[0].lon], 13);
-    } else {
-      const bounds = L.latLngBounds(valid.map(p => [p.lat, p.lon]));
-      map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13 });
+  if (activeView === "places") {
+    const places = filterPlaces();
+    places.forEach(p => {
+      if (p.lat == null) return;
+      const m = L.marker([p.lat, p.lon], { icon: makeIcon(p.category, p.source === "booked") });
+      m.bindPopup(makePopup(p), { maxWidth: 280 });
+      cluster.addLayer(m);
+      markers[`${p.lat},${p.lon}`] = m;
+    });
+    if (places.length > 0) {
+      const valid = places.filter(p => p.lat);
+      if (valid.length === 1) map.setView([valid[0].lat, valid[0].lon], 13);
+      else map.fitBounds(L.latLngBounds(valid.map(p => [p.lat, p.lon])), { padding: [40, 40], maxZoom: 13 });
     }
+    renderPlaceList(places);
+    document.getElementById("counts").textContent = `${places.length} / ${allPlaces.length} places`;
+  } else {
+    const day = itinerary.days.find(d => d.day === activeDay);
+    if (!day) return;
+    const layers = [];
+    const points = [];
+    day.stops.forEach((s, i) => {
+      const p = placeByName[s.place];
+      if (!p || p.lat == null) return;
+      const num = i + 1;
+      const m = L.marker([p.lat, p.lon], { icon: makeNumberedIcon(num, day.color) });
+      m.bindPopup(`<strong>${num}. ${s.place}</strong><div style="color:${day.color};font-weight:600">${s.time}</div>${s.note ? `<div style="margin-top:4px">${s.note}</div>` : ""}<div class="pop-meta">${s.duration||""}</div>`, { maxWidth: 280 });
+      cluster.addLayer(m);
+      layers.push(m);
+      points.push([p.lat, p.lon]);
+    });
+    if (points.length > 1) {
+      dayLayer = L.polyline(points, { color: day.color, weight: 3, opacity: 0.7, dashArray: "8 6" }).addTo(map);
+      map.fitBounds(L.latLngBounds(points), { padding: [50, 50], maxZoom: 13 });
+    } else if (points.length === 1) {
+      map.setView(points[0], 13);
+    }
+    renderSchedule(day);
+    document.getElementById("counts").textContent = `Day ${day.day} · ${day.stops.length} stops`;
   }
-
-  renderList(places);
-  document.getElementById("counts").textContent = `${places.length} / ${allPlaces.length} places`;
 }
 
-function renderList(places) {
+function makePopup(p) {
+  const stars = p.rating ? `⭐ ${p.rating}` : "";
+  const cat = CATEGORY_ICONS[p.category] || CATEGORY_ICONS.attraction;
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.query || p.name + " " + p.city)}`;
+  return `
+    <strong>${p.name}</strong>
+    <div>${cat.emoji} ${cat.name} · ${p.city}</div>
+    ${stars ? `<div class="stars">${stars}</div>` : ""}
+    ${p.notes ? `<div style="margin-top:6px">${p.notes}</div>` : ""}
+    <div class="pop-meta"><a href="${mapsUrl}" target="_blank" rel="noopener">🗺️ 구글맵에서 길찾기 →</a></div>
+  `;
+}
+
+function renderPlaceList(places) {
   const ul = document.getElementById("place-list");
   ul.innerHTML = "";
   const grouped = {};
-  places.forEach(p => {
-    if (!grouped[p.category]) grouped[p.category] = [];
-    grouped[p.category].push(p);
-  });
-
+  places.forEach(p => { (grouped[p.category] = grouped[p.category] || []).push(p); });
   CATEGORY_ORDER.forEach(cat => {
     if (!grouped[cat]) return;
     const ci = CATEGORY_ICONS[cat] || CATEGORY_ICONS.attraction;
@@ -292,33 +400,80 @@ function renderList(places) {
     const summary = document.createElement("summary");
     summary.innerHTML = `<span class="cat-emoji">${ci.emoji}</span> ${ci.name} <span class="cat-count">(${grouped[cat].length})</span>`;
     details.appendChild(summary);
-    grouped[cat]
-      .sort((a, b) => (b.rating||0) - (a.rating||0))
-      .forEach(p => {
-        const li = document.createElement("li");
-        li.className = "place-item";
-        const stars = p.rating ? `<span class="stars">⭐ ${p.rating}</span>` : "";
-        li.innerHTML = `
-          <div class="place-name">${p.name} <span class="badge ${p.source}">${SOURCE_LABELS[p.source]||p.source}</span></div>
-          <div class="place-meta">
-            <span>${p.city}</span>
-            ${stars ? "·" : ""} ${stars}
-          </div>
-          ${p.notes ? `<div class="place-notes">${p.notes}</div>` : ""}
-        `;
-        li.onclick = () => {
-          if (p.lat == null) return;
-          const key = `${p.lat},${p.lon}`;
-          map.setView([p.lat, p.lon], 15);
-          const m = markers[key];
-          if (m) cluster.zoomToShowLayer(m, () => m.openPopup());
-          [...ul.querySelectorAll(".place-item")].forEach(x => x.classList.remove("active"));
-          li.classList.add("active");
-        };
-        details.appendChild(li);
-      });
+    grouped[cat].sort((a, b) => (b.rating||0) - (a.rating||0)).forEach(p => {
+      const li = document.createElement("li");
+      li.className = "place-item";
+      const stars = p.rating ? `<span class="stars">⭐ ${p.rating}</span>` : "";
+      li.innerHTML = `
+        <div class="place-name">${p.name} <span class="badge ${p.source}">${SOURCE_LABELS[p.source]||p.source}</span></div>
+        <div class="place-meta"><span>${p.city}</span>${stars ? "·" : ""} ${stars}</div>
+        ${p.notes ? `<div class="place-notes">${p.notes}</div>` : ""}
+      `;
+      li.onclick = () => {
+        if (p.lat == null) return;
+        map.setView([p.lat, p.lon], 15);
+        const m = markers[`${p.lat},${p.lon}`];
+        if (m) cluster.zoomToShowLayer(m, () => m.openPopup());
+        [...ul.querySelectorAll(".place-item")].forEach(x => x.classList.remove("active"));
+        li.classList.add("active");
+      };
+      details.appendChild(li);
+    });
     ul.appendChild(details);
   });
+}
+
+function renderSchedule(day) {
+  const root = document.getElementById("day-content");
+  const dh = `
+    <div class="day-header" style="border-left: 4px solid ${day.color}">
+      <div class="date">${day.date} (${day.weekday})</div>
+      <div class="label">Day ${day.day} · ${day.label}</div>
+      <div class="totals">${day.stops.length} stops · 첫: ${day.stops[0]?.time} / 마지막: ${day.stops.at(-1)?.time}</div>
+    </div>
+  `;
+  const items = day.stops.map((s, i) => {
+    const p = placeByName[s.place];
+    const city = p ? `${p.city}` : "";
+    return `
+      <li class="stop-item" data-idx="${i}">
+        <div class="stop-time">${s.time}<span class="duration">${s.duration||""}</span></div>
+        <div class="stop-body" style="--dotc:${day.color}">
+          <div class="stop-place">${i+1}. ${s.place}</div>
+          ${s.note ? `<div class="stop-note">${s.note}</div>` : ""}
+          ${city ? `<div class="stop-meta">${city}</div>` : ""}
+        </div>
+      </li>
+    `;
+  }).join("");
+  root.innerHTML = dh + `<ul class="schedule-list">${items}</ul>`;
+  // wire clicks
+  root.querySelectorAll(".stop-item").forEach(el => {
+    el.addEventListener("click", () => {
+      const idx = +el.dataset.idx;
+      const s = day.stops[idx];
+      const p = placeByName[s.place];
+      if (!p || p.lat == null) return;
+      map.setView([p.lat, p.lon], 15);
+      const m = Object.values(cluster.getLayers()).find(layer => {
+        const ll = layer.getLatLng();
+        return Math.abs(ll.lat - p.lat) < 1e-6 && Math.abs(ll.lng - p.lon) < 1e-6;
+      });
+      if (m) cluster.zoomToShowLayer(m, () => m.openPopup());
+      root.querySelectorAll(".stop-item").forEach(x => x.classList.remove("active"));
+      el.classList.add("active");
+    });
+  });
+  // Update dot colors
+  root.querySelectorAll(".stop-body").forEach(b => {
+    b.style.setProperty("--dotc", day.color);
+  });
+  // Style dots via inline (since we can't do pseudo with var dynamically across all browsers)
+  const style = document.createElement("style");
+  style.textContent = `.stop-body::before { background: ${day.color} !important; }`;
+  document.head.querySelectorAll("style[data-dyn]").forEach(s => s.remove());
+  style.dataset.dyn = "1";
+  document.head.appendChild(style);
 }
 
 init();
