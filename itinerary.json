@@ -42,9 +42,9 @@
       "label": "산타모니카 · 베벌리 + LAFC 경기",
       "color": "#73c2fb",
       "stops": [
-        { "time": "11:00", "place": "BCD Tofu House LA", "note": "🍲 브런치 — K-Town 한식 (메뉴 추후)", "duration": "1시간" },
-        { "time": "14:00", "place": "Buccellati Beverly Hills", "note": "💎 Rodeo Drive 산책", "duration": "1시간" },
-        { "time": "15:00", "place": "SET ACTIVE", "note": "🛍️ 쇼핑", "duration": "1시간" },
+        { "time": "10:00", "place": "The Getty", "note": "🏛️ 무료 미술관 + 정원 (일요일 10:00-17:30 운영, 주차 $25)", "duration": "3시간" },
+        { "time": "13:00", "place": "Buccellati Beverly Hills", "note": "🍽️ 베벌리 점심 (메뉴 추후) + Rodeo Drive 산책", "duration": "1.5시간" },
+        { "time": "14:30", "place": "SET ACTIVE", "note": "🛍️ 쇼핑", "duration": "1시간" },
         { "time": "16:30", "place": "Kuya Lord", "note": "🍖 필리핀 BBQ 이른 저녁 (경기전)", "duration": "45분" },
         { "time": "17:30", "place": "BMO Stadium (LAFC)", "note": "⚽ 게이트 도착 (kick-off 30분 전, 주차 여유)", "duration": "30분" },
         { "time": "18:00", "place": "BMO Stadium (LAFC)", "note": "⚽ LAFC vs Houston Dynamo · Sec 211 Row S 21-22 · #2900-0578-4197-8782-1", "duration": "2.5시간" },
@@ -60,12 +60,12 @@
       "stops": [
         { "time": "09:00", "place": "Santa Monica", "note": "🏖️ 산타모니카 피어 + 자전거", "duration": "1.5시간" },
         { "time": "10:30", "place": "Muscle Beach Venice", "note": "💪 베니스 야외 헬스장 (보디빌더 명소)", "duration": "30분" },
-        { "time": "11:00", "place": "Venice Beach Boardwalk", "note": "🏖️ 보드워크 + 스트리트 퍼포머 + 벽화", "duration": "1시간" },
-        { "time": "12:30", "place": "Buccellati Beverly Hills", "note": "🍽️ 베벌리힐스 점심 (메뉴 추후) + Rodeo Drive 산책", "duration": "1.5시간" },
-        { "time": "14:30", "place": "The Getty", "note": "🏛️ ⚠️ Getty Center 월요일 휴관! D3(일) 오전으로 이동 권장 (또는 Hammer Museum 대체)", "duration": "3.5시간" },
-        { "time": "18:00", "place": "Bag of Cakes", "note": "☕ 베이커리 간식", "duration": "45분" },
-        { "time": "19:30", "place": "Old LA Zoo", "note": "📍 그리피스파크 폐장 동물원 (해 지기 전, 1시간)", "duration": "1시간" },
-        { "time": "21:00", "place": "Dune", "note": "🍽️ 저녁 (메뉴 추후 / n/naka 예약시 대체)", "duration": "2시간" }
+        { "time": "11:00", "place": "Venice Beach Boardwalk", "note": "🏖️ 보드워크 + 스트리트 퍼포머 + 벽화", "duration": "1.5시간" },
+        { "time": "12:30", "place": "Buccellati Beverly Hills", "note": "🍽️ 베벌리힐스 점심 (메뉴 추후)", "duration": "1.5시간" },
+        { "time": "14:30", "place": "BCD Tofu House LA", "note": "🍲 K-Town 잠깐 (간식 또는 휴식)", "duration": "1시간" },
+        { "time": "16:00", "place": "Bag of Cakes", "note": "☕ 베이커리 간식", "duration": "45분" },
+        { "time": "17:00", "place": "Old LA Zoo", "note": "📍 그리피스파크 폐장 동물원 (해 지기 전)", "duration": "1.5시간" },
+        { "time": "19:30", "place": "Dune", "note": "🍽️ 저녁 (메뉴 추후 / n/naka 예약시 대체)", "duration": "2시간" }
       ]
     },
     {
