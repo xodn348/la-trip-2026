@@ -642,17 +642,6 @@
       "lon": -118.3768
     },
     {
-      "name": "Connie & Ted's",
-      "city": "LA",
-      "category": "restaurant",
-      "source": "wishlist",
-      "rating": 4.3,
-      "notes": "🦞 해산물 (Cape Cod 스타일 oysters, lobster rolls, fish & chips)",
-      "query": "Connie and Ted's, 8171 Santa Monica Blvd, West Hollywood, CA 90046",
-      "lat": 34.0911191,
-      "lon": -118.3672148
-    },
-    {
       "name": "Muscle Beach Venice",
       "city": "Venice",
       "category": "attraction",
@@ -673,72 +662,6 @@
       "query": "Venice Beach Boardwalk, Venice, CA",
       "lat": 33.9867133,
       "lon": -118.4741048
-    },
-    {
-      "name": "The Albright",
-      "city": "Santa Monica",
-      "category": "restaurant",
-      "source": "wishlist",
-      "rating": 4.4,
-      "notes": "🦞 산타모니카 피어 위 랍스터롤 명소",
-      "query": "The Albright, 258 Santa Monica Pier, Santa Monica, CA 90401",
-      "lat": 34.0086,
-      "lon": -118.4974
-    },
-    {
-      "name": "Santa Monica Seafood",
-      "city": "Santa Monica",
-      "category": "restaurant",
-      "source": "wishlist",
-      "rating": 4.4,
-      "notes": "🦪 1939년 창업 해산물 마켓 + 카페 (생굴, 새우 칵테일, 클램차우더, 회)",
-      "query": "Santa Monica Seafood, 1000 Wilshire Blvd, Santa Monica, CA 90401",
-      "lat": 34.0236798,
-      "lon": -118.4923317
-    },
-    {
-      "name": "San Pedro Fish Market",
-      "city": "San Pedro",
-      "category": "restaurant",
-      "source": "wishlist",
-      "rating": 4.4,
-      "notes": "🦐 LA 최대 fish market — 새우 트레이 4인분 $30-50, 항구 야외 테이블, '월드 페이머스'",
-      "query": "San Pedro Fish Market, 1190 Nagoya Way, San Pedro, CA 90731",
-      "lat": 33.7268,
-      "lon": -118.2731
-    },
-    {
-      "name": "Quality Seafood Redondo",
-      "city": "Redondo Beach",
-      "category": "restaurant",
-      "source": "wishlist",
-      "rating": 4.4,
-      "notes": "🦐 Redondo Pier 위 fish market (생선 골라서 즉석 조리, 더 가까움)",
-      "query": "Quality Seafood, 130 International Boardwalk, Redondo Beach, CA 90277",
-      "lat": 33.8407002,
-      "lon": -118.390697
-    },
-    {
-      "name": "Boiling Crab Koreatown",
-      "city": "LA",
-      "category": "restaurant",
-      "source": "wishlist",
-      "rating": 4.3,
-      "notes": "🦐 K-Town 도보권 Cajun 해산물 보일 (새우/크롤피시 봉지 $25-40/인, 캐주얼)",
-      "query": "The Boiling Crab Koreatown, 3377 Wilshire Blvd, Los Angeles, CA 90010",
-      "lat": 34.0623265,
-      "lon": -118.2977594
-    },
-    {
-      "name": "Ondal 2 (꽃게탕)",
-      "city": "LA",
-      "category": "restaurant",
-      "source": "wishlist",
-      "rating": 4.4,
-      "notes": "🦀 한국식 매운 꽃게탕 명소 (1 pot $80, 2-3인분)",
-      "query": "Ondal 2, 4566 W 8th St, Los Angeles, CA 90005",
-      "lat": 34.0578,
-      "lon": -118.3148
     }
   ]
 }

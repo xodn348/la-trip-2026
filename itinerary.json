@@ -12,7 +12,7 @@
         { "time": "16:30", "place": "FOX Rent A Car (LAX)", "note": "🚗 픽업 (예약 #FFX073852B). 셔틀 보라색 표지판", "duration": "45분" },
         { "time": "17:30", "place": "Costco Inglewood", "note": "🛒 4박 식료품 장보기 (LAX 5분)", "duration": "1시간" },
         { "time": "18:45", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리", "duration": "1시간" },
-        { "time": "20:00", "place": "Boiling Crab Koreatown", "note": "🦐 저녁 — K-Town 도보권 Cajun 해산물 보일 (새우 봉지 $25-40/인)", "duration": "1.5시간" }
+        { "time": "20:00", "place": "827 S Manhattan Pl (독채)", "note": "🍽️ K-Town 저녁 (메뉴 추후)", "duration": "1.5시간" }
       ]
     },
     {
@@ -22,14 +22,17 @@
       "label": "⭐ 유니버셜 스튜디오 풀데이",
       "color": "#ff70a6",
       "stops": [
-        { "time": "09:00", "place": "827 S Manhattan Pl (독채)", "note": "🚗 K-Town 출발 (Universal까지 ~30분, 토요일 일찍)", "duration": "30분" },
+        { "time": "09:00", "place": "827 S Manhattan Pl (독채)", "note": "🚗 K-Town 출발", "duration": "30분" },
         { "time": "09:30", "place": "Universal Studios Hollywood", "note": "🅿️ 주차 + 게이트 도착 (rope drop)", "duration": "30분" },
-        { "time": "10:00", "place": "Universal Studios Hollywood", "note": "🎢 입장 — Wizarding World → Super Nintendo World → Studio Tour 순", "duration": "3시간" },
-        { "time": "13:00", "place": "Universal Studios Hollywood", "note": "🍽️ 인파크 점심 (Three Broomsticks 또는 Toadstool Cafe)", "duration": "1시간" },
-        { "time": "14:00", "place": "Universal Studios Hollywood", "note": "🎢 Jurassic World + WaterWorld + Transformers 등", "duration": "4시간" },
-        { "time": "18:00", "place": "Universal Studios Hollywood", "note": "🛍️ City Walk 산책 (입장권 X 무료) + 쇼핑", "duration": "1.5시간" },
-        { "time": "19:30", "place": "Universal Studios Hollywood", "note": "🍔 City Walk 저녁 (Bubba Gump Shrimp 또는 Hard Rock Cafe)", "duration": "1.5시간" },
-        { "time": "21:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
+        { "time": "10:00", "place": "Universal Studios Hollywood", "note": "🎢 입장 — Wizarding World, Super Nintendo World, Studio Tour, Jurassic 등", "duration": "7시간" },
+        { "time": "13:00", "place": "Universal Studios Hollywood", "note": "🍽️ 인파크 점심 (메뉴 추후)", "duration": "1시간" },
+        { "time": "17:30", "place": "Lake Hollywood Park", "note": "🌅 할리우드사인 명소 (sunset ~19:30, 사람 적음)", "duration": "1시간" },
+        { "time": "19:00", "place": "TCL Chinese Theatre", "note": "🎭 거리 손발도장", "duration": "20분" },
+        { "time": "19:20", "place": "Dolby Theatre", "note": "🎭 손발 사인 (TCL 옆)", "duration": "10분" },
+        { "time": "19:30", "place": "Pink's Hot Dogs", "note": "🌭 저녁 (1922년 핫도그 명소)", "duration": "1.5시간" },
+        { "time": "21:00", "place": "Levain Bakery LA", "note": "🍪 르뱅쿠키 원조 (디저트)", "duration": "30분" },
+        { "time": "21:30", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 밤 포토", "duration": "20분" },
+        { "time": "22:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
       ]
     },
     {
@@ -42,7 +45,7 @@
         { "time": "09:30", "place": "Santa Monica", "note": "🏖️ 산타모니카 피어 도착 + 산책 + 자전거", "duration": "1.5시간" },
         { "time": "11:00", "place": "Muscle Beach Venice", "note": "💪 베니스 야외 헬스장 (보디빌더 명소)", "duration": "30분" },
         { "time": "11:30", "place": "Venice Beach Boardwalk", "note": "🏖️ 보드워크 산책 + 스트리트 퍼포머 + 벽화", "duration": "1시간" },
-        { "time": "12:30", "place": "Santa Monica Seafood", "note": "🦪 1939년 창업 해산물 마켓+카페 (생굴, 새우 칵테일, 클램차우더, 회)", "duration": "1.5시간" },
+        { "time": "12:30", "place": "Santa Monica", "note": "🍽️ 산타모니카 점심 (메뉴 추후)", "duration": "1.5시간" },
         { "time": "14:00", "place": "Buccellati Beverly Hills", "note": "💎 Rodeo Drive 산책", "duration": "1시간" },
         { "time": "15:00", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 포토존", "duration": "30분" },
         { "time": "15:30", "place": "SET ACTIVE", "note": "🛍️ 쇼핑", "duration": "45분" },
@@ -56,17 +59,14 @@
       "day": 4,
       "date": "2026-05-11",
       "weekday": "월",
-      "label": "할리우드 + Getty + Griffith",
+      "label": "Getty + 그리피스 (여유로운 LA 마지막 날)",
       "color": "#9d4edd",
       "stops": [
-        { "time": "09:00", "place": "Lake Hollywood Park", "note": "🌅 할리우드사인 명소 (사람 적은 오전)", "duration": "1.5시간" },
-        { "time": "10:30", "place": "TCL Chinese Theatre", "note": "🎭 거리 손발도장", "duration": "30분" },
-        { "time": "11:00", "place": "Dolby Theatre", "note": "🎭 손발 사인", "duration": "30분" },
-        { "time": "11:30", "place": "Pink's Hot Dogs", "note": "🌭 점심 (1922년 핫도그 명소)", "duration": "1시간" },
-        { "time": "13:00", "place": "The Getty", "note": "🏛️ 무료 미술관 + 정원 (주차 $25)", "duration": "3.5시간" },
-        { "time": "16:30", "place": "Old LA Zoo", "note": "📍 그리피스파크 폐장 동물원 (추천 메모)", "duration": "1시간" },
-        { "time": "18:00", "place": "Levain Bakery LA", "note": "☕ 르뱅쿠키 원조!", "duration": "30분" },
-        { "time": "19:00", "place": "n/naka", "note": "⭐ 미슐랭 2스타 (※ 예약 못잡았으면 Dune 대체)", "duration": "2.5시간" }
+        { "time": "11:00", "place": "BCD Tofu House LA", "note": "🍲 점심 (메뉴 추후)", "duration": "1시간" },
+        { "time": "12:30", "place": "The Getty", "note": "🏛️ 무료 미술관 + 정원 (주차 $25)", "duration": "3.5시간" },
+        { "time": "16:30", "place": "Bag of Cakes", "note": "☕ 베이커리 간식", "duration": "45분" },
+        { "time": "17:30", "place": "Old LA Zoo", "note": "📍 그리피스파크 폐장 동물원 (추천 메모)", "duration": "1시간" },
+        { "time": "19:30", "place": "Dune", "note": "🍽️ 저녁 (메뉴 추후 / n/naka 예약시 대체)", "duration": "2시간" }
       ]
     },
     {
@@ -77,11 +77,10 @@
       "color": "#ffd166",
       "stops": [
         { "time": "10:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 체크아웃 (11AM)", "duration": "1시간" },
-        { "time": "11:00", "place": "Bag of Cakes", "note": "☕ LA 마지막 베이커리 간식", "duration": "30분" },
-        { "time": "12:00", "place": "Flamingo Las Vegas", "note": "🚗 LA→Vegas 출발 (270mi · 4.5h · I-15 N)", "duration": "5시간" },
-        { "time": "14:00", "place": "Flamingo Las Vegas", "note": "🍔 Barstow 휴게소 점심 (Peggy Sue's 50's Diner 추천)", "duration": "1시간" },
+        { "time": "11:00", "place": "Flamingo Las Vegas", "note": "🚗 LA→Vegas 출발 (270mi · 4.5h · I-15 N)", "duration": "5시간" },
+        { "time": "13:30", "place": "Flamingo Las Vegas", "note": "🍔 Barstow 휴게소 점심 (메뉴 추후)", "duration": "1시간" },
         { "time": "17:00", "place": "Flamingo Las Vegas", "note": "🏨 Flamingo 체크인 + 리조트피 $113.26 정산", "duration": "1시간" },
-        { "time": "19:00", "place": "Flamingo Las Vegas", "note": "🌃 Bellagio 분수쇼 + Strip 산책 + 저녁 (Mon Ami Gabi)", "duration": "3시간" }
+        { "time": "19:00", "place": "Flamingo Las Vegas", "note": "🌃 Bellagio 분수쇼 + Strip 산책 + 저녁 (메뉴 추후)", "duration": "3시간" }
       ]
     },
     {
@@ -91,11 +90,11 @@
       "label": "라스베가스 풀데이",
       "color": "#f8961e",
       "stops": [
-        { "time": "10:00", "place": "Flamingo Las Vegas", "note": "🍳 호텔 조식 또는 Strip 카페", "duration": "1시간" },
+        { "time": "10:00", "place": "Flamingo Las Vegas", "note": "🍳 아침 (메뉴 추후)", "duration": "1시간" },
         { "time": "11:30", "place": "Flamingo Las Vegas", "note": "🏊 호텔 풀 휴식", "duration": "2시간" },
         { "time": "14:00", "place": "Flamingo Las Vegas", "note": "🛍️ Caesars Forum Shops + 호텔 투어 (Bellagio, Aria, Wynn)", "duration": "3시간" },
-        { "time": "18:00", "place": "Flamingo Las Vegas", "note": "🍽️ Bacchanal Buffet (Caesars, 예약 권장)", "duration": "2시간" },
-        { "time": "20:30", "place": "Flamingo Las Vegas", "note": "🎪 Cirque du Soleil O (Bellagio) 또는 무료쇼 + Fremont St", "duration": "2시간" }
+        { "time": "18:00", "place": "Flamingo Las Vegas", "note": "🍽️ 저녁 (메뉴 추후)", "duration": "2시간" },
+        { "time": "20:30", "place": "Flamingo Las Vegas", "note": "🎪 야간 쇼 또는 Strip 야경 (Fremont St 옵션)", "duration": "2시간" }
       ]
     },
     {
@@ -110,7 +109,7 @@
         { "time": "13:30", "place": "Days Inn Anaheim At Disneyland", "note": "🛍️ Barstow Outlets 점심+쇼핑 (중간 정차)", "duration": "1.5시간" },
         { "time": "16:00", "place": "Days Inn Anaheim At Disneyland", "note": "🏨 체크인 (3PM, 무료주차, Disney 도보 5분)", "duration": "30분" },
         { "time": "17:00", "place": "Disneyland Park", "note": "🎢 Downtown Disney 산책 (입장권 X 무료, 분위기 미리보기)", "duration": "2시간" },
-        { "time": "19:30", "place": "Disneyland Park", "note": "🍽️ Earl of Sandwich 또는 Naples 저녁 (Downtown Disney)", "duration": "1.5시간" },
+        { "time": "19:30", "place": "Disneyland Park", "note": "🍽️ Downtown Disney 저녁 (메뉴 추후)", "duration": "1.5시간" },
         { "time": "21:00", "place": "Days Inn Anaheim At Disneyland", "note": "🏨 일찍 잠 (내일 디즈니 풀데이)", "duration": "" }
       ]
     },
@@ -124,11 +123,11 @@
         { "time": "08:00", "place": "Days Inn Anaheim At Disneyland", "note": "🧳 짐 정리 + 프런트 보관 요청 (or 늦은 체크아웃)", "duration": "30분" },
         { "time": "08:30", "place": "Disneyland Park", "note": "🚶 도보 5분 → 게이트 도착 (Early Magic Hours 활용)", "duration": "30분" },
         { "time": "09:00", "place": "Disneyland Park", "note": "🎢 입장 — 인기 어트랙션 직행 (Rise of Resistance, Indiana Jones, Space Mountain)", "duration": "4시간" },
-        { "time": "13:00", "place": "Disneyland Park", "note": "🍽️ 인파크 점심 (Bengal BBQ 또는 Plaza Inn)", "duration": "1시간" },
+        { "time": "13:00", "place": "Disneyland Park", "note": "🍽️ 인파크 점심 (메뉴 추후)", "duration": "1시간" },
         { "time": "14:00", "place": "Disneyland Park", "note": "🎢 오후 어트랙션 + 퍼레이드 (Genie+ 권장 $30/인)", "duration": "5시간" },
         { "time": "19:00", "place": "Days Inn Anaheim At Disneyland", "note": "🧳 호텔 짐 픽업 + 출발", "duration": "30분" },
         { "time": "19:30", "place": "Motel 6 San Diego Downtown", "note": "🚗 Anaheim→SD (~1.5h, I-5 S)", "duration": "1.5시간" },
-        { "time": "21:00", "place": "Tacos El Gordo", "note": "🌮 야식 (24시간 영업, Motel 6에서 차로 5분, 후 체크인)", "duration": "" }
+        { "time": "21:00", "place": "Motel 6 San Diego Downtown", "note": "🏨 체크인 + 야식 (메뉴 추후)", "duration": "" }
       ]
     },
     {
@@ -147,7 +146,7 @@
         { "time": "15:30", "place": "Motel 6 San Diego Downtown", "note": "🏨 체크아웃 (11AM 지났지만 짐만 픽업, 또는 미리 체크아웃)", "duration": "30분" },
         { "time": "16:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🚗 SD→LAX (~2시간, I-5 N → I-405 N)", "duration": "2시간" },
         { "time": "18:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🏨 체크인 + ⚠️ Late checkout 요청 (5/17 19:30까지)", "duration": "30분" },
-        { "time": "19:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🍽️ Manhattan Beach 저녁 (Manhattan Beach Post 또는 In-N-Out)", "duration": "1.5시간" },
+        { "time": "19:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🍽️ Manhattan Beach 저녁 (메뉴 추후)", "duration": "1.5시간" },
         { "time": "22:00", "place": "Extended Stay America LAX (El Segundo)", "note": "💻 ⚠️ DCAT 사전점검 (15분, 본 검사 PC와 동일 환경)", "duration": "30분" }
       ]
     },
@@ -159,10 +158,10 @@
       "color": "#bc6c25",
       "stops": [
         { "time": "10:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🛌 늦잠 + 짐 정리", "duration": "2시간" },
-        { "time": "12:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🍔 점심 — In-N-Out (LAX 근처)", "duration": "1시간" },
+        { "time": "12:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🍽️ 점심 (메뉴 추후)", "duration": "1시간" },
         { "time": "14:00", "place": "Extended Stay America LAX (El Segundo)", "note": "🛌 호텔 복귀 + DCAT 준비 (신분증, 인증키 880420, PC 셋업)", "duration": "2시간" },
         { "time": "16:00", "place": "Extended Stay America LAX (El Segundo)", "note": "💻 ⚠️ DCAT 본 검사 (Doosan, 16-19 PDT, 일정변경불가)", "duration": "3시간" },
-        { "time": "19:30", "place": "Extended Stay America LAX (El Segundo)", "note": "🍽️ 가벼운 저녁", "duration": "1시간" },
+        { "time": "19:30", "place": "Extended Stay America LAX (El Segundo)", "note": "🍽️ 저녁 (메뉴 추후)", "duration": "1시간" },
         { "time": "21:00", "place": "FOX Rent A Car (LAX)", "note": "🚗 차량 반납 (22:00 데드라인)", "duration": "30분" },
         { "time": "21:30", "place": "LAX Airport", "note": "✈️ 출국 (※ 항공편 정보 확인 필요)", "duration": "?" }
       ]
