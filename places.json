@@ -684,6 +684,17 @@
       "query": "The Albright, 258 Santa Monica Pier, Santa Monica, CA 90401",
       "lat": 34.0086,
       "lon": -118.4974
+    },
+    {
+      "name": "Santa Monica Seafood",
+      "city": "Santa Monica",
+      "category": "restaurant",
+      "source": "wishlist",
+      "rating": 4.4,
+      "notes": "🦪 1939년 창업 해산물 마켓 + 카페 (생굴, 새우 칵테일, 클램차우더, 회)",
+      "query": "Santa Monica Seafood, 1000 Wilshire Blvd, Santa Monica, CA 90401",
+      "lat": 34.0236798,
+      "lon": -118.4923317
     }
   ]
 }

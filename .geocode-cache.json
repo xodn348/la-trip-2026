@@ -244,5 +244,10 @@
     "lon": -118.4741048,
     "display": "Venice Beach Boardwalk, Venice, Los Angeles, Los Angeles County, California, United States"
   },
-  "The Albright, 258 Santa Monica Pier, Santa Monica, CA 90401": null
+  "The Albright, 258 Santa Monica Pier, Santa Monica, CA 90401": null,
+  "Santa Monica Seafood, 1000 Wilshire Blvd, Santa Monica, CA 90401": {
+    "lat": 34.0236798,
+    "lon": -118.4923317,
+    "display": "Santa Monica Seafood, 1000, Wilshire Boulevard, Downtown Santa Monica, Santa Monica, Los Angeles County, California, 90401, United States"
+  }
 }
