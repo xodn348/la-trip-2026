@@ -22,17 +22,18 @@
       "label": "⭐ 유니버셜 스튜디오 풀데이",
       "color": "#ff70a6",
       "stops": [
-        { "time": "07:30", "place": "827 S Manhattan Pl (독채)", "note": "🚗 K-Town 출발 (이른 아침 = Lake Hollywood 사람 적음)", "duration": "30분" },
-        { "time": "08:00", "place": "Lake Hollywood Park", "note": "🌅 할리우드사인 명소 (아침 = 사인 잘 보이고 햇빛 좋음)", "duration": "1.5시간" },
+        { "time": "07:30", "place": "827 S Manhattan Pl (독채)", "note": "🚗 K-Town 출발", "duration": "30분" },
+        { "time": "08:00", "place": "Lake Hollywood Park", "note": "🌅 할리우드사인 (아침 = 사람 적음, 사인 잘 보임)", "duration": "1.5시간" },
         { "time": "09:30", "place": "Universal Studios Hollywood", "note": "🚗 Lake Hollywood→Universal 10분, 주차 + 게이트", "duration": "30분" },
         { "time": "10:00", "place": "Universal Studios Hollywood", "note": "🎢 입장 — Wizarding World, Super Nintendo World, Studio Tour, Jurassic 등", "duration": "7.5시간" },
         { "time": "13:00", "place": "Universal Studios Hollywood", "note": "🍽️ 인파크 점심 (메뉴 추후)", "duration": "1시간" },
-        { "time": "17:30", "place": "TCL Chinese Theatre", "note": "🎭 거리 손발도장", "duration": "20분" },
-        { "time": "17:50", "place": "Dolby Theatre", "note": "🎭 손발 사인 (TCL 옆)", "duration": "10분" },
-        { "time": "18:30", "place": "Pink's Hot Dogs", "note": "🌭 저녁 (1922년 핫도그 명소)", "duration": "1.5시간" },
-        { "time": "20:00", "place": "Levain Bakery LA", "note": "🍪 르뱅쿠키 원조 (디저트)", "duration": "30분" },
-        { "time": "20:45", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 (밤 조명)", "duration": "20분" },
-        { "time": "21:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
+        { "time": "17:30", "place": "Pink's Hot Dogs", "note": "🌭 저녁 (1922년 핫도그 명소, Universal에서 15분)", "duration": "1시간" },
+        { "time": "19:00", "place": "Griffith Observatory", "note": "🔭 무료 천문대 + LA 야경 + 할리우드사인 (sunset 19:35, 라라랜드 명장면)", "duration": "1.5시간" },
+        { "time": "20:45", "place": "TCL Chinese Theatre", "note": "🎭 거리 손발도장", "duration": "15분" },
+        { "time": "21:00", "place": "Dolby Theatre", "note": "🎭 손발 사인 (TCL 옆)", "duration": "10분" },
+        { "time": "21:30", "place": "Levain Bakery LA", "note": "🍪 르뱅쿠키 원조 (토 23:00까지)", "duration": "30분" },
+        { "time": "22:00", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 (밤 조명)", "duration": "20분" },
+        { "time": "22:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
       ]
     },
     {

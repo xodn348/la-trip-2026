@@ -673,6 +673,17 @@
       "query": "Santa Monica Seafood, 1000 Wilshire Blvd, Santa Monica, CA 90401",
       "lat": 34.0236798,
       "lon": -118.4923317
+    },
+    {
+      "name": "Griffith Observatory",
+      "city": "LA",
+      "category": "viewpoint",
+      "source": "wishlist",
+      "rating": 4.7,
+      "notes": "🔭 무료 천문대 + LA 야경 + 할리우드사인 뷰 (라라랜드 명장면). 토 10:00-22:00, 월 휴관",
+      "query": "Griffith Observatory, 2800 E Observatory Rd, Los Angeles, CA 90027",
+      "lat": 34.1182187,
+      "lon": -118.3002933
     }
   ]
 }

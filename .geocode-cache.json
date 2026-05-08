@@ -261,5 +261,10 @@
     "lon": -118.2977594,
     "display": "The Boiling Crab, 3377, Wilshire Boulevard, Koreatown, Los Angeles, Los Angeles County, California, 90010, United States"
   },
-  "Ondal 2, 4566 W 8th St, Los Angeles, CA 90005": null
+  "Ondal 2, 4566 W 8th St, Los Angeles, CA 90005": null,
+  "Griffith Observatory, 2800 E Observatory Rd, Los Angeles, CA 90027": {
+    "lat": 34.1182187,
+    "lon": -118.3002933,
+    "display": "Griffith Observatory, 2800, East Observatory Road, Los Feliz Neighborhood Council District, Los Angeles, Los Angeles County, California, 90027, United States"
+  }
 }
