@@ -225,5 +225,10 @@
     "lat": 33.9421675,
     "lon": -118.4213591,
     "display": "Los Angeles International Airport, Arbor Vitae Street, Los Angeles, Los Angeles County, California, 90045, United States"
+  },
+  "LAX Rental Car Center, Los Angeles": {
+    "lat": 33.950126,
+    "lon": -118.3737481,
+    "display": "LAX Rental Car Center, 5251, West 98th Street, Los Angeles, Los Angeles County, California, 90045, United States"
   }
 }
