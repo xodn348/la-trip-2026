@@ -10,9 +10,9 @@
       "stops": [
         { "time": "14:13", "place": "LAX Airport", "note": "✈️ UA2460 IAH→LAX 도착", "duration": "30분" },
         { "time": "16:30", "place": "FOX Rent A Car (LAX)", "note": "🚗 픽업 (예약 #FFX073852B). 셔틀 보라색 표지판", "duration": "45분" },
-        { "time": "17:30", "place": "Costco Inglewood", "note": "🛒 4박 식료품 장보기 (LAX 5분 거리, K-Town 가는 길)", "duration": "1시간" },
-        { "time": "18:45", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리 (호스트 12시 메시지)", "duration": "45분" },
-        { "time": "20:00", "place": "Connie & Ted's", "note": "🦞 해산물 저녁 (Cape Cod 스타일 oysters, lobster rolls)", "duration": "1.5시간" }
+        { "time": "17:30", "place": "San Pedro Fish Market", "note": "🦐 LA 최대 fish market — 새우 트레이 $30-50 4인분, 항구 야외 테이블 (저녁)", "duration": "1.5시간" },
+        { "time": "19:15", "place": "Costco Inglewood", "note": "🛒 4박 식료품 장보기 (San Pedro→Costco 25분)", "duration": "1시간" },
+        { "time": "20:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리 (호스트 12시 메시지)", "duration": "" }
       ]
     },
     {

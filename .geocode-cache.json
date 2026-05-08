@@ -249,5 +249,11 @@
     "lat": 34.0236798,
     "lon": -118.4923317,
     "display": "Santa Monica Seafood, 1000, Wilshire Boulevard, Downtown Santa Monica, Santa Monica, Los Angeles County, California, 90401, United States"
+  },
+  "San Pedro Fish Market, 1190 Nagoya Way, San Pedro, CA 90731": null,
+  "Quality Seafood, 130 International Boardwalk, Redondo Beach, CA 90277": {
+    "lat": 33.8407002,
+    "lon": -118.390697,
+    "display": "Quality Seafood Inc., 130, International Boardwalk, Redondo Beach, Los Angeles County, California, 90277, United States"
   }
 }

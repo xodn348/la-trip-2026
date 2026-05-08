@@ -695,6 +695,28 @@
       "query": "Santa Monica Seafood, 1000 Wilshire Blvd, Santa Monica, CA 90401",
       "lat": 34.0236798,
       "lon": -118.4923317
+    },
+    {
+      "name": "San Pedro Fish Market",
+      "city": "San Pedro",
+      "category": "restaurant",
+      "source": "wishlist",
+      "rating": 4.4,
+      "notes": "🦐 LA 최대 fish market — 새우 트레이 4인분 $30-50, 항구 야외 테이블, '월드 페이머스'",
+      "query": "San Pedro Fish Market, 1190 Nagoya Way, San Pedro, CA 90731",
+      "lat": 33.7268,
+      "lon": -118.2731
+    },
+    {
+      "name": "Quality Seafood Redondo",
+      "city": "Redondo Beach",
+      "category": "restaurant",
+      "source": "wishlist",
+      "rating": 4.4,
+      "notes": "🦐 Redondo Pier 위 fish market (생선 골라서 즉석 조리, 더 가까움)",
+      "query": "Quality Seafood, 130 International Boardwalk, Redondo Beach, CA 90277",
+      "lat": 33.8407002,
+      "lon": -118.390697
     }
   ]
 }
