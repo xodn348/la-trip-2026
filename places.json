@@ -662,6 +662,17 @@
       "query": "Venice Beach Boardwalk, Venice, CA",
       "lat": 33.9867133,
       "lon": -118.4741048
+    },
+    {
+      "name": "Santa Monica Seafood",
+      "city": "Santa Monica",
+      "category": "restaurant",
+      "source": "wishlist",
+      "rating": 4.4,
+      "notes": "🦪 1939년 창업 해산물 마켓 + 카페 (생굴, 새우 칵테일, 클램차우더, 회)",
+      "query": "Santa Monica Seafood, 1000 Wilshire Blvd, Santa Monica, CA 90401",
+      "lat": 34.0236798,
+      "lon": -118.4923317
     }
   ]
 }

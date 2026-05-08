@@ -10,9 +10,9 @@
       "stops": [
         { "time": "14:13", "place": "LAX Airport", "note": "✈️ UA2460 IAH→LAX 도착", "duration": "30분" },
         { "time": "16:30", "place": "FOX Rent A Car (LAX)", "note": "🚗 픽업 (예약 #FFX073852B). 셔틀 보라색 표지판", "duration": "45분" },
-        { "time": "17:30", "place": "Costco Inglewood", "note": "🛒 4박 식료품 장보기 (LAX 5분)", "duration": "1시간" },
-        { "time": "18:45", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리", "duration": "1시간" },
-        { "time": "20:00", "place": "827 S Manhattan Pl (독채)", "note": "🍽️ K-Town 저녁 (메뉴 추후)", "duration": "1.5시간" }
+        { "time": "17:30", "place": "Santa Monica Seafood", "note": "🦪 저녁 — 1939년 창업 해산물 시장 + 카페 (생굴, 새우 칵테일, 클램차우더)", "duration": "1.5시간" },
+        { "time": "19:00", "place": "Costco Inglewood", "note": "🛒 4박 식료품 (Santa Monica→Inglewood 20분, 식료품 신선도 위해 dinner 후)", "duration": "1시간" },
+        { "time": "20:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리", "duration": "" }
       ]
     },
     {
@@ -22,17 +22,17 @@
       "label": "⭐ 유니버셜 스튜디오 풀데이",
       "color": "#ff70a6",
       "stops": [
-        { "time": "09:00", "place": "827 S Manhattan Pl (독채)", "note": "🚗 K-Town 출발", "duration": "30분" },
-        { "time": "09:30", "place": "Universal Studios Hollywood", "note": "🅿️ 주차 + 게이트 도착 (rope drop)", "duration": "30분" },
-        { "time": "10:00", "place": "Universal Studios Hollywood", "note": "🎢 입장 — Wizarding World, Super Nintendo World, Studio Tour, Jurassic 등", "duration": "7시간" },
+        { "time": "07:30", "place": "827 S Manhattan Pl (독채)", "note": "🚗 K-Town 출발 (이른 아침 = Lake Hollywood 사람 적음)", "duration": "30분" },
+        { "time": "08:00", "place": "Lake Hollywood Park", "note": "🌅 할리우드사인 명소 (아침 = 사인 잘 보이고 햇빛 좋음)", "duration": "1.5시간" },
+        { "time": "09:30", "place": "Universal Studios Hollywood", "note": "🚗 Lake Hollywood→Universal 10분, 주차 + 게이트", "duration": "30분" },
+        { "time": "10:00", "place": "Universal Studios Hollywood", "note": "🎢 입장 — Wizarding World, Super Nintendo World, Studio Tour, Jurassic 등", "duration": "7.5시간" },
         { "time": "13:00", "place": "Universal Studios Hollywood", "note": "🍽️ 인파크 점심 (메뉴 추후)", "duration": "1시간" },
-        { "time": "17:30", "place": "Lake Hollywood Park", "note": "🌅 할리우드사인 명소 (sunset ~19:30, 사람 적음)", "duration": "1시간" },
-        { "time": "19:00", "place": "TCL Chinese Theatre", "note": "🎭 거리 손발도장", "duration": "20분" },
-        { "time": "19:20", "place": "Dolby Theatre", "note": "🎭 손발 사인 (TCL 옆)", "duration": "10분" },
-        { "time": "19:30", "place": "Pink's Hot Dogs", "note": "🌭 저녁 (1922년 핫도그 명소)", "duration": "1.5시간" },
-        { "time": "21:00", "place": "Levain Bakery LA", "note": "🍪 르뱅쿠키 원조 (디저트)", "duration": "30분" },
-        { "time": "21:30", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 밤 포토", "duration": "20분" },
-        { "time": "22:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
+        { "time": "17:30", "place": "TCL Chinese Theatre", "note": "🎭 거리 손발도장", "duration": "20분" },
+        { "time": "17:50", "place": "Dolby Theatre", "note": "🎭 손발 사인 (TCL 옆)", "duration": "10분" },
+        { "time": "18:30", "place": "Pink's Hot Dogs", "note": "🌭 저녁 (1922년 핫도그 명소)", "duration": "1.5시간" },
+        { "time": "20:00", "place": "Levain Bakery LA", "note": "🍪 르뱅쿠키 원조 (디저트)", "duration": "30분" },
+        { "time": "20:45", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 (밤 조명)", "duration": "20분" },
+        { "time": "21:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
       ]
     },
     {
@@ -42,14 +42,10 @@
       "label": "산타모니카 · 베벌리 + LAFC 경기",
       "color": "#73c2fb",
       "stops": [
-        { "time": "09:30", "place": "Santa Monica", "note": "🏖️ 산타모니카 피어 도착 + 산책 + 자전거", "duration": "1.5시간" },
-        { "time": "11:00", "place": "Muscle Beach Venice", "note": "💪 베니스 야외 헬스장 (보디빌더 명소)", "duration": "30분" },
-        { "time": "11:30", "place": "Venice Beach Boardwalk", "note": "🏖️ 보드워크 산책 + 스트리트 퍼포머 + 벽화", "duration": "1시간" },
-        { "time": "12:30", "place": "Santa Monica", "note": "🍽️ 산타모니카 점심 (메뉴 추후)", "duration": "1.5시간" },
+        { "time": "11:00", "place": "BCD Tofu House LA", "note": "🍲 브런치 — K-Town 한식 (메뉴 추후)", "duration": "1시간" },
         { "time": "14:00", "place": "Buccellati Beverly Hills", "note": "💎 Rodeo Drive 산책", "duration": "1시간" },
-        { "time": "15:00", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 포토존", "duration": "30분" },
-        { "time": "15:30", "place": "SET ACTIVE", "note": "🛍️ 쇼핑", "duration": "45분" },
-        { "time": "16:30", "place": "Kuya Lord", "note": "🍽️ 필리핀 BBQ 이른 저녁 (경기전)", "duration": "45분" },
+        { "time": "15:00", "place": "SET ACTIVE", "note": "🛍️ 쇼핑", "duration": "1시간" },
+        { "time": "16:30", "place": "Kuya Lord", "note": "🍖 필리핀 BBQ 이른 저녁 (경기전)", "duration": "45분" },
         { "time": "17:30", "place": "BMO Stadium (LAFC)", "note": "⚽ 게이트 도착 (kick-off 30분 전, 주차 여유)", "duration": "30분" },
         { "time": "18:00", "place": "BMO Stadium (LAFC)", "note": "⚽ LAFC vs Houston Dynamo · Sec 211 Row S 21-22 · #2900-0578-4197-8782-1", "duration": "2.5시간" },
         { "time": "20:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀 (BMO에서 ~15분)", "duration": "" }
@@ -59,14 +55,17 @@
       "day": 4,
       "date": "2026-05-11",
       "weekday": "월",
-      "label": "Getty + 그리피스 (여유로운 LA 마지막 날)",
+      "label": "산타모니카 그쪽 + 베벌리 점심 + Getty",
       "color": "#9d4edd",
       "stops": [
-        { "time": "11:00", "place": "BCD Tofu House LA", "note": "🍲 점심 (메뉴 추후)", "duration": "1시간" },
-        { "time": "12:30", "place": "The Getty", "note": "🏛️ 무료 미술관 + 정원 (주차 $25)", "duration": "3.5시간" },
-        { "time": "16:30", "place": "Bag of Cakes", "note": "☕ 베이커리 간식", "duration": "45분" },
-        { "time": "17:30", "place": "Old LA Zoo", "note": "📍 그리피스파크 폐장 동물원 (추천 메모)", "duration": "1시간" },
-        { "time": "19:30", "place": "Dune", "note": "🍽️ 저녁 (메뉴 추후 / n/naka 예약시 대체)", "duration": "2시간" }
+        { "time": "09:00", "place": "Santa Monica", "note": "🏖️ 산타모니카 피어 + 자전거", "duration": "1.5시간" },
+        { "time": "10:30", "place": "Muscle Beach Venice", "note": "💪 베니스 야외 헬스장 (보디빌더 명소)", "duration": "30분" },
+        { "time": "11:00", "place": "Venice Beach Boardwalk", "note": "🏖️ 보드워크 + 스트리트 퍼포머 + 벽화", "duration": "1시간" },
+        { "time": "12:30", "place": "Buccellati Beverly Hills", "note": "🍽️ 베벌리힐스 점심 (메뉴 추후) + Rodeo Drive 산책", "duration": "1.5시간" },
+        { "time": "14:30", "place": "The Getty", "note": "🏛️ ⚠️ Getty Center 월요일 휴관! D3(일) 오전으로 이동 권장 (또는 Hammer Museum 대체)", "duration": "3.5시간" },
+        { "time": "18:00", "place": "Bag of Cakes", "note": "☕ 베이커리 간식", "duration": "45분" },
+        { "time": "19:30", "place": "Old LA Zoo", "note": "📍 그리피스파크 폐장 동물원 (해 지기 전, 1시간)", "duration": "1시간" },
+        { "time": "21:00", "place": "Dune", "note": "🍽️ 저녁 (메뉴 추후 / n/naka 예약시 대체)", "duration": "2시간" }
       ]
     },
     {
