@@ -34,14 +34,17 @@
       "day": 3,
       "date": "2026-05-10",
       "weekday": "일",
-      "label": "산타모니카 · 말리부 해안 드라이브",
+      "label": "산타모니카 + LAFC 경기",
       "color": "#73c2fb",
       "stops": [
         { "time": "10:00", "place": "Santa Monica", "note": "🏖️ 산타모니카 피어 + 자전거", "duration": "2시간" },
         { "time": "12:30", "place": "Meat On Ocean", "note": "🍽️ 점심 스테이크 (※ 예약필수)", "duration": "1.5시간" },
-        { "time": "14:30", "place": "Buccellati Beverly Hills", "note": "💎 주얼리 구경 + Rodeo Drive 산책", "duration": "1.5시간" },
-        { "time": "17:00", "place": "Kuya Lord", "note": "🍽️ 필리핀 BBQ 저녁", "duration": "1.5시간" },
-        { "time": "19:30", "place": "SET ACTIVE", "note": "🛍️ 쇼핑", "duration": "1.5시간" }
+        { "time": "14:00", "place": "Buccellati Beverly Hills", "note": "💎 주얼리 + Rodeo Drive 산책", "duration": "1.5시간" },
+        { "time": "15:30", "place": "SET ACTIVE", "note": "🛍️ 쇼핑 (가볍게)", "duration": "45분" },
+        { "time": "16:30", "place": "Kuya Lord", "note": "🍽️ 필리핀 BBQ 이른 저녁 (경기전)", "duration": "45분" },
+        { "time": "17:30", "place": "BMO Stadium (LAFC)", "note": "⚽ 게이트 도착 (경기 30분전, 주차 여유)", "duration": "30분" },
+        { "time": "18:00", "place": "BMO Stadium (LAFC)", "note": "⚽ LAFC vs Houston Dynamo · Sec 211 Row S 21-22 · 주문 #2900-0578-4197-8782-1", "duration": "2.5시간" },
+        { "time": "20:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 숙소 복귀 (BMO에서 ~15분)", "duration": "" }
       ]
     },
     {

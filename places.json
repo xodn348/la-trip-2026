@@ -66,8 +66,8 @@
       "rating": 3.9,
       "notes": "⚠️ 와이프 메모: 5/14-5/17 숙소 (실제 예약과 불일치)",
       "query": "Libra Hotel Los Angeles",
-      "lat": 34.0469,
-      "lon": -118.2569
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Meat On Ocean",
@@ -88,8 +88,8 @@
       "rating": 3.6,
       "notes": "insta",
       "query": "RH Ocean Grill at RH Newport Beach",
-      "lat": 33.6181,
-      "lon": -117.877
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Torrey Pines Gliderport",
@@ -110,8 +110,8 @@
       "rating": 4.7,
       "notes": "주얼리",
       "query": "Buccellati Beverly Hills",
-      "lat": 34.0671,
-      "lon": -118.4001
+      "lat": null,
+      "lon": null
     },
     {
       "name": "SET ACTIVE",
@@ -121,8 +121,8 @@
       "rating": 5.0,
       "notes": "쇼핑해야돼",
       "query": "SET ACTIVE Los Angeles",
-      "lat": 34.0834,
-      "lon": -118.364
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Kuya Lord",
@@ -143,8 +143,8 @@
       "rating": 4.9,
       "notes": "⭐ 미슐랭 2스타 카이세키",
       "query": "3455 S Overland Ave, Los Angeles, CA 90034",
-      "lat": 34.0269,
-      "lon": -118.4099
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Pink's Hot Dogs",
@@ -198,8 +198,8 @@
       "rating": null,
       "notes": "Torrey Pines 산책로",
       "query": "Torrey Pines Gliderport Trail, La Jolla",
-      "lat": 32.8909,
-      "lon": -117.2516
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Salk Institute",
@@ -396,8 +396,8 @@
       "rating": 4.7,
       "notes": "발보아파크 식물원",
       "query": "Botanical Building, Balboa Park",
-      "lat": 32.7321,
-      "lon": -117.1497
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Lily Pond",
@@ -407,8 +407,8 @@
       "rating": 4.8,
       "notes": "발보아파크 연못",
       "query": "Lily Pond, Balboa Park, San Diego",
-      "lat": 32.7321,
-      "lon": -117.15
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Spanish Village Art Center",
@@ -418,8 +418,8 @@
       "rating": 4.7,
       "notes": "발보아파크 아트센터",
       "query": "Spanish Village Art Center, Balboa Park",
-      "lat": 32.7373,
-      "lon": -117.1466
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Little Italy",
@@ -440,8 +440,8 @@
       "rating": 4.6,
       "notes": "멕시칸 시푸드",
       "query": "Oscars Mexican Seafood, San Diego",
-      "lat": 32.8084,
-      "lon": -117.2552
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Coronado Island",
@@ -473,8 +473,8 @@
       "rating": 4.3,
       "notes": "베이커리",
       "query": "Bag of Cakes Los Angeles",
-      "lat": 34.056,
-      "lon": -118.4419
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Old LA Zoo",
@@ -550,8 +550,8 @@
       "rating": 4.4,
       "notes": "르뱅쿠키 원조",
       "query": "Levain Bakery Los Angeles",
-      "lat": 34.0734,
-      "lon": -118.3736
+      "lat": null,
+      "lon": null
     },
     {
       "name": "Santa Monica",
@@ -618,6 +618,17 @@
       "query": "LAX Rental Car Center, Los Angeles",
       "lat": 33.950126,
       "lon": -118.3737481
+    },
+    {
+      "name": "BMO Stadium (LAFC)",
+      "city": "LA",
+      "category": "attraction",
+      "source": "booked",
+      "rating": 4.7,
+      "notes": "⚽ 5/10(일) 18:00 LAFC vs Houston Dynamo · Sec 211, Row S, Seat 21-22 · $116.62 · 주문 #2900-0578-4197-8782-1",
+      "query": "BMO Stadium, 3939 S Figueroa St, Los Angeles",
+      "lat": 34.0124,
+      "lon": -118.2849
     }
   ]
 }
