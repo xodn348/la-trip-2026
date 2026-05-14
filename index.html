@@ -73,6 +73,9 @@
   .day-header .date { font-size: 12px; color: var(--muted); }
   .day-header .label { font-size: 16px; font-weight: 600; margin-top: 2px; }
   .day-header .totals { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .day-cover { width: 100%; aspect-ratio: 16/10; background: var(--panel2); overflow: hidden; position: relative; }
+  .day-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .day-cover .badge { position: absolute; bottom: 8px; left: 10px; background: rgba(0,0,0,0.55); color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 11px; backdrop-filter: blur(4px); }
 
   .schedule-list { padding: 8px 0 80px; margin: 0; list-style: none; position: relative; }
   .schedule-list::before { content: ""; position: absolute; left: 64px; top: 16px; bottom: 80px; width: 2px; background: var(--line); }
@@ -133,6 +136,42 @@
 </style>
 </head>
 <body>
+<div id="gate" style="position:fixed;inset:0;background:#0f1115;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Pretendard',sans-serif;color:#e8eaee">
+  <div style="font-size:24px;margin-bottom:8px">🔒</div>
+  <div style="font-size:13px;color:#8b94a3;margin-bottom:16px">LA & Las Vegas 2026</div>
+  <input id="gate-pw" type="password" placeholder="비밀번호" autocomplete="off" style="padding:10px 14px;background:#1e242d;border:1px solid #2a313c;border-radius:8px;color:#e8eaee;font-size:14px;outline:none;width:200px;text-align:center"/>
+  <div id="gate-err" style="color:#ef476f;font-size:12px;margin-top:8px;height:14px"></div>
+</div>
+<script>
+(async () => {
+  const HASH = "3ddea50f9e4ec666a7de471a0b967df0dcff7f04c595e9c67e2133faabd06dd5"; // SHA-256("la2026")
+  const KEY = "latrip-unlock-v1";
+  async function sha(s) {
+    const buf = new TextEncoder().encode(s);
+    const h = await crypto.subtle.digest("SHA-256", buf);
+    return Array.from(new Uint8Array(h)).map(b=>b.toString(16).padStart(2,"0")).join("");
+  }
+  const gate = document.getElementById("gate");
+  const pw = document.getElementById("gate-pw");
+  const err = document.getElementById("gate-err");
+  if (localStorage.getItem(KEY) === HASH) { gate.remove(); return; }
+  document.getElementById("app").style.filter = "blur(20px)";
+  pw.focus();
+  pw.addEventListener("keydown", async (e) => {
+    if (e.key !== "Enter") return;
+    const h = await sha(pw.value);
+    if (h === HASH) {
+      localStorage.setItem(KEY, HASH);
+      gate.remove();
+      document.getElementById("app").style.filter = "";
+    } else {
+      err.textContent = "비밀번호 틀림";
+      pw.value = "";
+      setTimeout(() => err.textContent = "", 1500);
+    }
+  });
+})();
+</script>
 <div id="app">
   <aside id="sidebar">
     <div id="header">
@@ -425,7 +464,13 @@ function renderPlaceList(places) {
 
 function renderSchedule(day) {
   const root = document.getElementById("day-content");
+  const cover = day.cover ? `
+    <div class="day-cover">
+      <img src="${day.cover}" alt="Day ${day.day}" loading="lazy"/>
+      <div class="badge">Day ${day.day} · ${day.date}</div>
+    </div>` : "";
   const dh = `
+    ${cover}
     <div class="day-header" style="border-left: 4px solid ${day.color}">
       <div class="date">${day.date} (${day.weekday})</div>
       <div class="label">Day ${day.day} · ${day.label}</div>
