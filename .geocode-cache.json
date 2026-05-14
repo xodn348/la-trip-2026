@@ -266,5 +266,43 @@
     "lat": 34.1182187,
     "lon": -118.3002933,
     "display": "Griffith Observatory, 2800, East Observatory Road, Los Feliz Neighborhood Council District, Los Angeles, Los Angeles County, California, 90027, United States"
+  },
+  "Randy's Donuts, 805 W Manchester Blvd, Inglewood, CA 90301": {
+    "lat": 33.9618522,
+    "lon": -118.3703791,
+    "display": "Randy’s Donuts, 805, West Manchester Boulevard, Inglewood, Los Angeles County, California, 90301, United States"
+  },
+  "Santa Monica Pier, 200 Santa Monica Pier, Santa Monica, CA 90401": null,
+  "The Grove, 189 The Grove Dr, Los Angeles, CA 90036": {
+    "lat": 34.0713106,
+    "lon": -118.3575151,
+    "display": "Apple The Grove, 189, The Grove Drive, The Grove, Fairfax, Los Angeles, Los Angeles County, California, 90036, United States"
+  },
+  "Sphere, 255 Sands Ave, Las Vegas, NV 89169": {
+    "lat": 36.1212076,
+    "lon": -115.1620674,
+    "display": "Sphere, 255, Sands Avenue, Paradise, Clark County, Nevada, 89109, United States"
+  },
+  "The Venetian Resort, 3355 S Las Vegas Blvd, Las Vegas, NV 89109": null,
+  "Wynn Las Vegas, 3131 S Las Vegas Blvd, Las Vegas, NV 89109": {
+    "lat": 36.1263781,
+    "lon": -115.165818,
+    "display": "Wynn Las Vegas Casino, 3131, South Las Vegas Boulevard, Paradise, Clark County, Nevada, 89109, United States"
+  },
+  "Tacos El Gordo, 1724 S Las Vegas Blvd, Las Vegas, NV 89104": {
+    "lat": 36.1584656,
+    "lon": -115.1265713,
+    "display": "Tacos El Gordo, 1724, East Charleston Boulevard, Huntridge, Las Vegas, Clark County, Nevada, 89104, United States"
+  },
+  "Arts Square, 1025 S 1st St, Las Vegas, NV 89101": null,
+  "Rodeo Drive, Beverly Hills, CA 90210": {
+    "lat": 34.0676065,
+    "lon": -118.401447,
+    "display": "Rodeo Drive, Golden Triange, Beverly Hills, Los Angeles County, California, 90210, United States"
+  },
+  "Sunset Boulevard, West Hollywood, CA 90069": {
+    "lat": 34.0908434,
+    "lon": -118.3830646,
+    "display": "West Sunset Boulevard, Sunset Strip, West Hollywood, Los Angeles County, California, 90069, United States"
   }
 }

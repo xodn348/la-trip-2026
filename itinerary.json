@@ -1,101 +1,100 @@
 {
-  "note": "확정: D2=유니버셜, D8=디즈니랜드. 나머지 재배치. itinerary.json 수정 후 새로고침.",
+  "note": "D1~D6 실제 다닌 경로 (사진 GPS 메타데이터 기반). D7~D10 계획.",
   "days": [
     {
       "day": 1,
       "date": "2026-05-08",
       "weekday": "금",
-      "label": "도착일 · LA 코리아타운",
+      "label": "도착일 · LA 코리아타운 (실제)",
       "color": "#e63946",
       "stops": [
-        { "time": "14:13", "place": "LAX Airport", "note": "✈️ UA2460 IAH→LAX 도착", "duration": "30분" },
-        { "time": "16:30", "place": "FOX Rent A Car (LAX)", "note": "🚗 픽업 (예약 #FFX073852B). 셔틀 보라색 표지판", "duration": "45분" },
-        { "time": "17:30", "place": "Santa Monica Seafood", "note": "🦪 저녁 — 1939년 창업 해산물 시장 + 카페 (생굴, 새우 칵테일, 클램차우더)", "duration": "1.5시간" },
-        { "time": "19:00", "place": "Costco Inglewood", "note": "🛒 4박 식료품 (Santa Monica→Inglewood 20분, 식료품 신선도 위해 dinner 후)", "duration": "1시간" },
-        { "time": "20:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 4박 체크인 + 식료품 정리", "duration": "" }
+        { "time": "14:13", "place": "LAX Airport", "note": "✈️ UA2460 IAH→LAX 도착", "duration": "" },
+        { "time": "19:00", "place": "FOX Rent A Car (LAX)", "note": "🚗 픽업 완료 (예약 #FFX073852B)", "duration": "" },
+        { "time": "19:52", "place": "Santa Monica Seafood", "note": "🦪 저녁 (7분, 빠르게)", "duration": "7분" },
+        { "time": "21:25", "place": "827 S Manhattan Pl (독채)", "note": "🏨 체크인", "duration": "" }
       ]
     },
     {
       "day": 2,
       "date": "2026-05-09",
       "weekday": "토",
-      "label": "산타모니카 그쪽 + 베벌리 + 그리피스",
+      "label": "산타모니카 + 게티 + 베벌리힐즈 (실제)",
       "color": "#9d4edd",
       "stops": [
-        { "time": "09:00", "place": "Santa Monica", "note": "🏖️ 산타모니카 피어 + 자전거", "duration": "1.5시간" },
-        { "time": "10:30", "place": "Muscle Beach Venice", "note": "💪 베니스 야외 헬스장 (보디빌더 명소)", "duration": "30분" },
-        { "time": "11:00", "place": "Venice Beach Boardwalk", "note": "🏖️ 보드워크 + 스트리트 퍼포머 + 벽화", "duration": "1.5시간" },
-        { "time": "12:30", "place": "Buccellati Beverly Hills", "note": "🍽️ 베벌리힐스 점심 (메뉴 추후)", "duration": "1.5시간" },
-        { "time": "14:30", "place": "BCD Tofu House LA", "note": "🍲 K-Town 잠깐 (간식 또는 휴식)", "duration": "1시간" },
-        { "time": "16:00", "place": "Bag of Cakes", "note": "☕ 베이커리 간식", "duration": "45분" },
-        { "time": "17:00", "place": "Old LA Zoo", "note": "📍 그리피스파크 폐장 동물원", "duration": "1.5시간" },
-        { "time": "19:30", "place": "Dune", "note": "🍽️ Atwater Village 저녁 (메뉴 추후)", "duration": "1.5시간" },
-        { "time": "21:00", "place": "Griffith Observatory", "note": "🔭 야경 + LA 시티뷰 + 할리우드사인 (토 22:00까지, Atwater→Griffith 10분)", "duration": "1시간" },
-        { "time": "22:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
+        { "time": "10:52", "place": "Randy's Donuts Inglewood", "note": "🍩 드라이브쓰루 (1분)", "duration": "1분" },
+        { "time": "11:37", "place": "Meat On Ocean", "note": "🥩 산타모니카 도착", "duration": "" },
+        { "time": "11:50", "place": "Santa Monica Pier", "note": "🎡 점심 후 피어 산책 (38분)", "duration": "40분" },
+        { "time": "13:43", "place": "The Getty", "note": "🏛️ 진입 (San Diego Fwy)", "duration": "" },
+        { "time": "14:06", "place": "The Getty", "note": "🏛️ 관람 (1시간 10분)", "duration": "1.2시간" },
+        { "time": "16:17", "place": "Beverly Hills", "note": "💎 Crescent Dr 도착", "duration": "" },
+        { "time": "16:23", "place": "Buccellati Beverly Hills", "note": "💍 매장 + Rodeo 산책 (35분)", "duration": "35분" },
+        { "time": "17:12", "place": "Buccellati Beverly Hills", "note": "💍 베벌리힐즈 계속 (17분)", "duration": "17분" },
+        { "time": "18:47", "place": "Meat On Ocean", "note": "🥩 저녁 (40분)", "duration": "40분" },
+        { "time": "19:43", "place": "Meat On Ocean", "note": "🥩 저녁 이어서 (33분)", "duration": "33분" },
+        { "time": "21:12", "place": "Santa Monica", "note": "🌃 4th St 마무리", "duration": "" },
+        { "time": "22:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 복귀 (추정)", "duration": "" }
       ]
     },
     {
       "day": 3,
       "date": "2026-05-10",
       "weekday": "일",
-      "label": "산타모니카 · 베벌리 + LAFC 경기",
+      "label": "West Hollywood + Pink Wall + 할리우드사인 + LAFC (실제)",
       "color": "#73c2fb",
       "stops": [
-        { "time": "10:00", "place": "The Getty", "note": "🏛️ 무료 미술관 + 정원 (일요일 10:00-17:30 운영, 주차 $25)", "duration": "3시간" },
-        { "time": "13:00", "place": "Buccellati Beverly Hills", "note": "🍽️ 베벌리 점심 (메뉴 추후) + Rodeo Drive 산책", "duration": "1.5시간" },
-        { "time": "14:30", "place": "SET ACTIVE", "note": "🛍️ 쇼핑", "duration": "1시간" },
-        { "time": "16:30", "place": "Kuya Lord", "note": "🍖 필리핀 BBQ 이른 저녁 (경기전)", "duration": "45분" },
-        { "time": "17:30", "place": "BMO Stadium (LAFC)", "note": "⚽ 게이트 도착 (kick-off 30분 전, 주차 여유)", "duration": "30분" },
-        { "time": "18:00", "place": "BMO Stadium (LAFC)", "note": "⚽ LAFC vs Houston Dynamo · Sec 211 Row S 21-22 · #2900-0578-4197-8782-1", "duration": "2.5시간" },
-        { "time": "20:30", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀 (BMO에서 ~15분)", "duration": "" }
+        { "time": "09:25", "place": "827 S Manhattan Pl (독채)", "note": "🛌 오전 휴식 (~12시 출발)", "duration": "2.3시간" },
+        { "time": "12:45", "place": "West Hollywood", "note": "🌈 Sunset Blvd (MiniLuxe 근처, 39분)", "duration": "39분" },
+        { "time": "13:39", "place": "West Hollywood", "note": "🚶 Croft Ave 이동 (12분)", "duration": "12분" },
+        { "time": "14:01", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 (32분)", "duration": "32분" },
+        { "time": "16:09", "place": "Lake Hollywood Park", "note": "🌄 할리우드사인 뷰 (11분)", "duration": "11분" },
+        { "time": "17:25", "place": "BMO Stadium (LAFC)", "note": "⚽ 경기장 도착", "duration": "" },
+        { "time": "17:37", "place": "BMO Stadium (LAFC)", "note": "⚽ LAFC vs Houston · Sec 211 Row S 21-22 (2시간 23분)", "duration": "2.4시간" },
+        { "time": "21:26", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
       ]
     },
     {
       "day": 4,
       "date": "2026-05-11",
       "weekday": "월",
-      "label": "⭐ 유니버셜 + 할리우드사인 + 할리우드 크롤",
+      "label": "⭐ 유니버셜 풀데이 + 그리피스 야경 (실제)",
       "color": "#ff70a6",
       "stops": [
-        { "time": "07:30", "place": "827 S Manhattan Pl (독채)", "note": "🚗 K-Town 출발", "duration": "30분" },
-        { "time": "08:00", "place": "Lake Hollywood Park", "note": "🌅 할리우드사인 (아침 = 사람 적음, 사인 잘 보임)", "duration": "1.5시간" },
-        { "time": "09:30", "place": "Universal Studios Hollywood", "note": "🚗 Lake Hollywood→Universal 10분, 주차 + 게이트", "duration": "30분" },
-        { "time": "10:00", "place": "Universal Studios Hollywood", "note": "🎢 입장 — Wizarding World, Super Nintendo World, Studio Tour, Jurassic 등", "duration": "7.5시간" },
-        { "time": "13:00", "place": "Universal Studios Hollywood", "note": "🍽️ 인파크 점심 (메뉴 추후)", "duration": "1시간" },
-        { "time": "17:30", "place": "Pink's Hot Dogs", "note": "🌭 저녁 (1922년 핫도그 명소, Universal에서 15분)", "duration": "1시간" },
-        { "time": "19:00", "place": "TCL Chinese Theatre", "note": "🎭 거리 손발도장", "duration": "20분" },
-        { "time": "19:20", "place": "Dolby Theatre", "note": "🎭 손발 사인 (TCL 옆)", "duration": "10분" },
-        { "time": "19:45", "place": "Levain Bakery LA", "note": "🍪 르뱅쿠키 원조 (월 23:00까지)", "duration": "30분" },
-        { "time": "20:30", "place": "Paul Smith Pink Wall", "note": "📸 분홍벽 (밤 조명)", "duration": "20분" },
-        { "time": "21:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀", "duration": "" }
+        { "time": "10:09", "place": "Universal Studios Hollywood", "note": "🎢 CityWalk 입구 도착", "duration": "" },
+        { "time": "10:30", "place": "Universal Studios Hollywood", "note": "🎢 입장 (1시간 4분)", "duration": "1시간" },
+        { "time": "11:40", "place": "Universal Studios Hollywood", "note": "🎢 본격 관람 (2시간 58분)", "duration": "3시간" },
+        { "time": "14:50", "place": "Universal Studios Hollywood", "note": "🎢 오후 어트랙션 (47분)", "duration": "47분" },
+        { "time": "18:12", "place": "Griffith Observatory", "note": "🔭 천문대 야경 (24분)", "duration": "24분" },
+        { "time": "19:09", "place": "Lake Hollywood Park", "note": "🌌 할리우드사인 밤뷰 (14분)", "duration": "14분" },
+        { "time": "21:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 K-Town 복귀 (추정)", "duration": "" }
       ]
     },
     {
       "day": 5,
       "date": "2026-05-12",
       "weekday": "화",
-      "label": "LA → 라스베가스 (이동)",
+      "label": "LA → 라스베가스 이동 (실제)",
       "color": "#ffd166",
       "stops": [
-        { "time": "10:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 체크아웃 (11AM)", "duration": "1시간" },
-        { "time": "11:00", "place": "Flamingo Las Vegas", "note": "🚗 LA→Vegas 출발 (270mi · 4.5h · I-15 N)", "duration": "5시간" },
-        { "time": "13:30", "place": "Flamingo Las Vegas", "note": "🍔 Barstow 휴게소 점심 (메뉴 추후)", "duration": "1시간" },
-        { "time": "17:00", "place": "Flamingo Las Vegas", "note": "🏨 Flamingo 체크인 + 리조트피 $113.26 정산", "duration": "1시간" },
-        { "time": "19:00", "place": "Flamingo Las Vegas", "note": "🌃 Bellagio 분수쇼 + Strip 산책 + 저녁 (메뉴 추후)", "duration": "3시간" }
+        { "time": "11:00", "place": "827 S Manhattan Pl (독채)", "note": "🏨 체크아웃", "duration": "" },
+        { "time": "11:20", "place": "The Grove", "note": "🛍️ 떠나기 전 쇼핑 (23분)", "duration": "23분" },
+        { "time": "12:00", "place": "Flamingo Las Vegas", "note": "🚗 LA→Vegas 출발 (270mi · I-15 N)", "duration": "" },
+        { "time": "20:16", "place": "Flamingo Las Vegas", "note": "🏨 체크인 + 리조트피 $113.26", "duration": "" }
       ]
     },
     {
       "day": 6,
       "date": "2026-05-13",
       "weekday": "수",
-      "label": "라스베가스 풀데이",
+      "label": "라스베가스 풀데이 — 아트지구 + Strip (실제)",
       "color": "#f8961e",
       "stops": [
-        { "time": "10:00", "place": "Flamingo Las Vegas", "note": "🍳 아침 (메뉴 추후)", "duration": "1시간" },
-        { "time": "11:30", "place": "Flamingo Las Vegas", "note": "🏊 호텔 풀 휴식", "duration": "2시간" },
-        { "time": "14:00", "place": "Flamingo Las Vegas", "note": "🛍️ Caesars Forum Shops + 호텔 투어 (Bellagio, Aria, Wynn)", "duration": "3시간" },
-        { "time": "18:00", "place": "Flamingo Las Vegas", "note": "🍽️ 저녁 (메뉴 추후)", "duration": "2시간" },
-        { "time": "20:30", "place": "Flamingo Las Vegas", "note": "🎪 야간 쇼 또는 Strip 야경 (Fremont St 옵션)", "duration": "2시간" }
+        { "time": "11:28", "place": "Las Vegas Arts District", "note": "🎨 Art Square 다운타운 (9분)", "duration": "9분" },
+        { "time": "11:53", "place": "Tacos El Gordo Las Vegas", "note": "🌮 점심 (29분)", "duration": "29분" },
+        { "time": "13:09", "place": "The Venetian", "note": "🛶 CHICA 방문 (11분)", "duration": "11분" },
+        { "time": "13:49", "place": "Sphere", "note": "🌐 Sphere 외관 (1시간 27분)", "duration": "1.5시간" },
+        { "time": "15:48", "place": "The Venetian", "note": "🛶 Rialto Bridge", "duration": "" },
+        { "time": "19:11", "place": "Wynn Las Vegas", "note": "🎰 윈 방문 (6분)", "duration": "6분" },
+        { "time": "22:12", "place": "Flamingo Las Vegas", "note": "🏨 호텔 복귀", "duration": "" }
       ]
     },
     {
