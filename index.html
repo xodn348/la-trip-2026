@@ -139,7 +139,10 @@
 <div id="gate" style="position:fixed;inset:0;background:#0f1115;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Pretendard',sans-serif;color:#e8eaee">
   <div style="font-size:24px;margin-bottom:8px">🔒</div>
   <div style="font-size:13px;color:#8b94a3;margin-bottom:16px">LA & Las Vegas 2026</div>
-  <input id="gate-pw" type="password" placeholder="비밀번호" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text" style="padding:10px 14px;background:#1e242d;border:1px solid #2a313c;border-radius:8px;color:#e8eaee;font-size:14px;outline:none;width:200px;text-align:center"/>
+  <div style="display:flex;gap:6px;align-items:center">
+    <input id="gate-pw" type="password" placeholder="비밀번호" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text" style="padding:10px 14px;background:#1e242d;border:1px solid #2a313c;border-radius:8px;color:#e8eaee;font-size:14px;outline:none;width:200px;text-align:center"/>
+    <button id="gate-btn" style="padding:10px 14px;background:#ffd166;color:#000;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer">확인</button>
+  </div>
   <div id="gate-err" style="color:#ef476f;font-size:12px;margin-top:8px;height:14px"></div>
 </div>
 <script>
@@ -171,7 +174,8 @@
     }
   }
   pw.addEventListener("keydown", (e) => { if (e.key === "Enter") tryUnlock(); });
-  pw.addEventListener("blur", () => { if (pw.value) tryUnlock(); });
+  pw.addEventListener("keyup", (e) => { if (e.key === "Enter") tryUnlock(); });
+  document.getElementById("gate-btn").addEventListener("click", tryUnlock);
 })();
 </script>
 <div id="app">
