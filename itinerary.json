@@ -474,8 +474,7 @@
           "time": "20:04",
           "place": "Extended Stay America LAX (El Segundo)",
           "note": "🏨 LAX 호텔 도착 (~3.5시간 늦은 도착, DCAT 사전점검)",
-          "duration": "",
-          "photo": "photos/s/d9-2.jpg"
+          "duration": ""
         }
       ]
     },
@@ -483,21 +482,43 @@
       "day": 10,
       "date": "2026-05-17",
       "weekday": "일",
-      "label": "DCAT 본 검사 + 출국 (오늘)",
+      "label": "DCAT 본 검사 + 출국 (오늘 — 비치 마무리)",
       "color": "#bc6c25",
       "stops": [
         {
           "time": "07:51",
           "place": "Extended Stay America LAX (El Segundo)",
-          "note": "🌅 호텔 기상",
-          "duration": "70분"
+          "note": "🌅 호텔 기상 + 체크아웃 준비",
+          "duration": "1.2시간",
+          "photo": "photos/s/d10-0.jpg"
         },
         {
           "time": "09:23",
           "place": "Randy's Donuts Inglewood",
-          "note": "🍩 아침 (출국 전 마지막 LA 도넛)",
-          "duration": "",
+          "note": "🍩 아침 (LA 마지막 도넛)",
+          "duration": "15분",
           "photo": "photos/s/d10-1.jpg"
+        },
+        {
+          "time": "12:50",
+          "place": "Downtown Santa Monica",
+          "note": "🛍️ 출국 전 마지막 산타모니카",
+          "duration": "30분",
+          "photo": "photos/s/d10-2.jpg"
+        },
+        {
+          "time": "13:23",
+          "place": "Manhattan Beach",
+          "note": "🏖️ 마지막 비치 산책 (Ocean Front Walk)",
+          "duration": "10분",
+          "photo": "photos/s/d10-3.jpg"
+        },
+        {
+          "time": "15:21",
+          "place": "FOX Rent A Car (LAX)",
+          "note": "🚗 LAX Rental Car Center (정찰/연료)",
+          "duration": "",
+          "photo": "photos/s/d10-4.jpg"
         },
         {
           "time": "16:00",

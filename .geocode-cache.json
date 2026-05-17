@@ -325,5 +325,15 @@
     "lat": 32.7256463,
     "lon": -117.2568816,
     "display": "Sunset Cliffs Boulevard, Sunset Cliffs, Point Loma, San Diego, San Diego County, California, 92107, United States"
+  },
+  "Downtown Santa Monica, Santa Monica, CA 90401": {
+    "lat": 34.0136604,
+    "lon": -118.4916499,
+    "display": "Downtown Santa Monica, 4th Street, Downtown Santa Monica, Santa Monica, Los Angeles County, California, 90401, United States"
+  },
+  "Manhattan Beach, CA 90266": {
+    "lat": 33.8872777,
+    "lon": -118.4104324,
+    "display": "Manhattan Beach, Los Angeles County, California, 90266, United States"
   }
 }

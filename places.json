@@ -55,8 +55,8 @@
       "rating": 3.7,
       "notes": "5/16-5/17 (1박, 출국전) 주차 $17 · ⚠️ 5/17 DCAT 본 검사 16-19시 PDT — Late checkout 필수",
       "query": "1910 E Mariposa Ave, El Segundo, CA 90245",
-      "lat": 33.9232319,
-      "lon": -118.394974
+      "lat": 33.9432,
+      "lon": -118.409
     },
     {
       "name": "Libra Hotel",
@@ -849,6 +849,28 @@
       "query": "Sunset Cliffs Blvd, San Diego, CA 92107",
       "lat": 32.7256463,
       "lon": -117.2568816
+    },
+    {
+      "name": "Downtown Santa Monica",
+      "city": "Santa Monica",
+      "category": "attraction",
+      "source": "visited",
+      "rating": 4.6,
+      "notes": "🛍️ 5/17 출국 전 마지막 산타모니카",
+      "query": "Downtown Santa Monica, Santa Monica, CA 90401",
+      "lat": 34.0136604,
+      "lon": -118.4916499
+    },
+    {
+      "name": "Manhattan Beach",
+      "city": "Manhattan Beach",
+      "category": "beach",
+      "source": "visited",
+      "rating": 4.7,
+      "notes": "🏖️ 5/17 마지막 비치 산책 (El Porto)",
+      "query": "Manhattan Beach, CA 90266",
+      "lat": 33.9858,
+      "lon": -118.4727
     }
   ]
 }
