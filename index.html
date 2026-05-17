@@ -73,9 +73,12 @@
   .day-header .date { font-size: 12px; color: var(--muted); }
   .day-header .label { font-size: 16px; font-weight: 600; margin-top: 2px; }
   .day-header .totals { font-size: 11px; color: var(--muted); margin-top: 4px; }
-  .day-cover { width: 100%; aspect-ratio: 16/10; background: var(--panel2); overflow: hidden; position: relative; }
-  .day-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .day-cover .badge { position: absolute; bottom: 8px; left: 10px; background: rgba(0,0,0,0.55); color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 11px; backdrop-filter: blur(4px); }
+  .stop-photo { width: 100%; aspect-ratio: 4/3; background: var(--panel2); overflow: hidden; border-radius: 6px; margin-top: 8px; cursor: zoom-in; }
+  .stop-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.2s; }
+  .stop-photo:hover img { transform: scale(1.02); }
+  .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9000; display: none; align-items: center; justify-content: center; cursor: zoom-out; padding: 20px; }
+  .lightbox.show { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
   .schedule-list { padding: 8px 0 80px; margin: 0; list-style: none; position: relative; }
   .schedule-list::before { content: ""; position: absolute; left: 64px; top: 16px; bottom: 80px; width: 2px; background: var(--line); }
@@ -136,6 +139,18 @@
 </style>
 </head>
 <body>
+<div id="lightbox" class="lightbox"><img alt=""/></div>
+<script>
+document.addEventListener("click", e => {
+  const lb = document.getElementById("lightbox");
+  if (e.target === lb || e.target.tagName === "IMG" && e.target.parentElement === lb) {
+    lb.classList.remove("show");
+  }
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") document.getElementById("lightbox").classList.remove("show");
+});
+</script>
 <div id="app">
   <aside id="sidebar">
     <div id="header">
@@ -428,13 +443,7 @@ function renderPlaceList(places) {
 
 function renderSchedule(day) {
   const root = document.getElementById("day-content");
-  const cover = day.cover ? `
-    <div class="day-cover">
-      <img src="${day.cover}" alt="Day ${day.day}" loading="lazy"/>
-      <div class="badge">Day ${day.day} · ${day.date}</div>
-    </div>` : "";
   const dh = `
-    ${cover}
     <div class="day-header" style="border-left: 4px solid ${day.color}">
       <div class="date">${day.date} (${day.weekday})</div>
       <div class="label">Day ${day.day} · ${day.label}</div>
@@ -444,6 +453,7 @@ function renderSchedule(day) {
   const items = day.stops.map((s, i) => {
     const p = placeByName[s.place];
     const city = p ? `${p.city}` : "";
+    const photo = s.photo ? `<div class="stop-photo" data-src="${s.photo}"><img src="${s.photo}" alt="${s.place}" loading="lazy"/></div>` : "";
     return `
       <li class="stop-item" data-idx="${i}">
         <div class="stop-time">${s.time}<span class="duration">${s.duration||""}</span></div>
@@ -451,6 +461,7 @@ function renderSchedule(day) {
           <div class="stop-place">${i+1}. ${s.place}</div>
           ${s.note ? `<div class="stop-note">${s.note}</div>` : ""}
           ${city ? `<div class="stop-meta">${city}</div>` : ""}
+          ${photo}
         </div>
       </li>
     `;
@@ -458,7 +469,16 @@ function renderSchedule(day) {
   root.innerHTML = dh + `<ul class="schedule-list">${items}</ul>`;
   // wire clicks
   root.querySelectorAll(".stop-item").forEach(el => {
-    el.addEventListener("click", () => {
+    el.addEventListener("click", (ev) => {
+      // photo click → lightbox
+      const photoEl = ev.target.closest(".stop-photo");
+      if (photoEl) {
+        ev.stopPropagation();
+        const lb = document.getElementById("lightbox");
+        lb.querySelector("img").src = photoEl.dataset.src;
+        lb.classList.add("show");
+        return;
+      }
       const idx = +el.dataset.idx;
       const s = day.stops[idx];
       const p = placeByName[s.place];
