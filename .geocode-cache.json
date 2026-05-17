@@ -304,5 +304,26 @@
     "lat": 34.0908434,
     "lon": -118.3830646,
     "display": "West Sunset Boulevard, Sunset Strip, West Hollywood, Los Angeles County, California, 90069, United States"
+  },
+  "Pho Da Lat, 4632 W Flamingo Rd, Las Vegas, NV 89103": null,
+  "Cajon Pass, San Bernardino County, CA": {
+    "lat": 34.3252897,
+    "lon": -117.4286824,
+    "display": "Cajon Pass, San Bernardino County, California, United States"
+  },
+  "Mission Bay, San Diego, CA": {
+    "lat": 32.7792158,
+    "lon": -117.2342029,
+    "display": "Mission Bay, Mission Beach, San Diego, San Diego County, California, 92109, United States"
+  },
+  "Prohibition, 548 5th Ave, San Diego, CA 92101": {
+    "lat": 32.7110966,
+    "lon": -117.1602835,
+    "display": "Prohibition Lounge, 548, 5th Avenue, Asian Pacific Thematic Historic District, Gaslamp Quarter, Banker's Hill, San Diego, San Diego County, California, 92101, United States"
+  },
+  "Sunset Cliffs Blvd, San Diego, CA 92107": {
+    "lat": 32.7256463,
+    "lon": -117.2568816,
+    "display": "Sunset Cliffs Boulevard, Sunset Cliffs, Point Loma, San Diego, San Diego County, California, 92107, United States"
   }
 }

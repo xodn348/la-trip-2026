@@ -407,8 +407,8 @@
       "rating": 4.8,
       "notes": "발보아파크 연못",
       "query": "Lily Pond, Balboa Park, San Diego",
-      "lat": 32.7311,
-      "lon": -117.149
+      "lat": 32.73237,
+      "lon": -117.14905
     },
     {
       "name": "Spanish Village Art Center",
@@ -794,6 +794,61 @@
       "query": "Sunset Boulevard, West Hollywood, CA 90069",
       "lat": 34.0908434,
       "lon": -118.3830646
+    },
+    {
+      "name": "Pho Da Lat Las Vegas",
+      "city": "Las Vegas",
+      "category": "restaurant",
+      "source": "visited",
+      "rating": 4.4,
+      "notes": "🍜 5/14 Vegas 떠나기 전 베트남쌀국수",
+      "query": "Pho Da Lat, 4632 W Flamingo Rd, Las Vegas, NV 89103",
+      "lat": 36.1151,
+      "lon": -115.20311
+    },
+    {
+      "name": "Cajon Pass (drive)",
+      "city": "San Bernardino",
+      "category": "attraction",
+      "source": "visited",
+      "rating": null,
+      "notes": "🏜️ 5/14 Vegas→Anaheim 드라이브 (Mojave 사막)",
+      "query": "Cajon Pass, San Bernardino County, CA",
+      "lat": 34.3252897,
+      "lon": -117.4286824
+    },
+    {
+      "name": "Mission Bay",
+      "city": "San Diego",
+      "category": "beach",
+      "source": "visited",
+      "rating": 4.7,
+      "notes": "🏖️ 5/16 아침 미션베이 산책",
+      "query": "Mission Bay, San Diego, CA",
+      "lat": 32.7792158,
+      "lon": -117.2342029
+    },
+    {
+      "name": "Prohibition Lounge",
+      "city": "San Diego",
+      "category": "restaurant",
+      "source": "visited",
+      "rating": 4.5,
+      "notes": "🥃 5/15 야식 Gaslamp 칵테일바",
+      "query": "Prohibition, 548 5th Ave, San Diego, CA 92101",
+      "lat": 32.7110966,
+      "lon": -117.1602835
+    },
+    {
+      "name": "Sunset Cliffs Blvd",
+      "city": "San Diego",
+      "category": "viewpoint",
+      "source": "visited",
+      "rating": 4.7,
+      "notes": "🌅 5/15 OB 일몰 가는 길",
+      "query": "Sunset Cliffs Blvd, San Diego, CA 92107",
+      "lat": 32.7256463,
+      "lon": -117.2568816
     }
   ]
 }
