@@ -414,32 +414,39 @@
           "photo": "photos/s/d8-3.jpg"
         },
         {
+          "time": "16:15",
+          "place": "Spanish Village Art Center",
+          "note": "🎨 Balboa Park 아트센터 (2분)",
+          "duration": "2분",
+          "photo": "photos/s/d8-4.jpg"
+        },
+        {
           "time": "17:21",
           "place": "Sunset Cliffs Blvd",
           "note": "🌅 OB 가는 길",
           "duration": "15분",
-          "photo": "photos/s/d8-4.jpg"
+          "photo": "photos/s/d8-5.jpg"
         },
         {
           "time": "17:50",
           "place": "Hodad's Ocean Beach",
           "note": "🍔 OB 햄버거 저녁 (81분)",
           "duration": "1.4시간",
-          "photo": "photos/s/d8-5.jpg"
+          "photo": "photos/s/d8-6.jpg"
         },
         {
           "time": "20:23",
           "place": "Phil's BBQ",
           "note": "🍖 BBQ 야식 (13분)",
           "duration": "13분",
-          "photo": "photos/s/d8-6.jpg"
+          "photo": "photos/s/d8-7.jpg"
         },
         {
           "time": "22:28",
           "place": "Prohibition Lounge",
           "note": "🥃 Gaslamp 칵테일바 마무리 (19분)",
           "duration": "19분",
-          "photo": "photos/s/d8-7.jpg"
+          "photo": "photos/s/d8-8.jpg"
         },
         {
           "time": "23:30",
@@ -459,7 +466,7 @@
         {
           "time": "11:53",
           "place": "Mission Bay",
-          "note": "🏖️ 미션베이 산책 (10분)",
+          "note": "🏖️ 미션베이 + Mission Beach 산책 (Belmont Park 쪽, 10분)",
           "duration": "10분",
           "photo": "photos/s/d9-0.jpg"
         },

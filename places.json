@@ -242,8 +242,8 @@
       "rating": null,
       "notes": "미션비치",
       "query": "Mission Beach, San Diego, CA",
-      "lat": 32.7825908,
-      "lon": -117.2524943
+      "lat": 32.7715,
+      "lon": -117.2459
     },
     {
       "name": "San Diego Zoo",
@@ -418,8 +418,8 @@
       "rating": 4.7,
       "notes": "발보아파크 아트센터",
       "query": "Spanish Village Art Center, Balboa Park",
-      "lat": 32.732,
-      "lon": -117.144
+      "lat": 32.7333,
+      "lon": -117.1477
     },
     {
       "name": "Little Italy",
@@ -825,8 +825,8 @@
       "rating": 4.7,
       "notes": "🏖️ 5/16 아침 미션베이 산책",
       "query": "Mission Bay, San Diego, CA",
-      "lat": 32.7792158,
-      "lon": -117.2342029
+      "lat": 32.7715,
+      "lon": -117.248
     },
     {
       "name": "Prohibition Lounge",
